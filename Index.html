@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <!-- =======================================================
+         Quantum Frequency Records
+         Landing Page
+         Version 1.0
+    ======================================================== -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Quantum Frequency Records
+    </title>
+
+    <meta name="description"
+          content="Discover, Harness, Nurture and Succeed. Explore the artists and music of Quantum Frequency Records.">
+
+    <meta name="theme-color"
+          content="#060708">
+
+    <meta property="og:title"
+          content="Quantum Frequency Records">
+
+    <meta property="og:description"
+          content="Unleash Music's Raw Vibrational Energy">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:image"
+          content="assets/images/social-preview.jpg">
+
+    <meta property="og:url"
+          content="https://YOURDOMAIN.com">
+
+    <!-- =======================
+         Google Fonts
+    ======================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- =======================
+         Font Awesome
+    ======================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- =======================
+         Stylesheets
+    ======================== -->
+
+    <link rel="stylesheet"
+          href="assets/css/variables.css">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="assets/css/animations.css">
+
+    <link rel="stylesheet"
+          href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==============================================
+            BACKGROUND LAYERS
+    =============================================== -->
+
+    <div id="background-gradient"></div>
+
+    <div id="particles-js"></div>
+
+    <div id="background-noise"></div>
+
+    <div id="ambient-glow"></div>
+
+    <!-- ==============================================
+            PAGE WRAPPER
+    =============================================== -->
+
+    <main id="landing-page">
+
+        <!-- ======================================
+                HERO SECTION
+        ======================================= -->
+
+        <section id="hero">
+
+            <div class="hero-content">
+
+                <!-- -----------------------------
+                        HEADLINE
+                ------------------------------ -->
+
+                <h1>
+
+                    Unleash Music's<br>
+
+                    <span>
+
+                        Raw Vibrational Energy
+
+                    </span>
+
+                </h1>
+
+                <!-- -----------------------------
+                        SUBTITLE
+                ------------------------------ -->
+
+                <div id="animated-subtitle">
+
+                    <span>Discover</span>
+
+                    <span>•</span>
+
+                    <span>Harness</span>
+
+                    <span>•</span>
+
+                    <span>Nurture</span>
+
+                    <span>•</span>
+
+                    <span>Succeed</span>
+
+                </div>
+
+                <!-- -----------------------------
+                        BUTTON
+                ------------------------------ -->
+
+                <a href="home.html"
+                   id="explore-button">
+
+                    Enter the Experience
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================
+                LOGO
+        ======================================= -->
+
+        <section id="logo-section">
+
+            <img
+
+                src="assets/logos/qfr-logo.png"
+
+                alt="Quantum Frequency Records Logo"
+
+                id="qfr-logo"
+
+            >
+
+        </section>
+
+        <!-- ======================================
+                SCROLL INDICATOR
+        ======================================= -->
+
+        <div id="scroll-indicator">
+
+            <span>
+
+                Scroll
+
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </div>
+
+    </main>
+    <!-- ==============================================
+            PAGE LOADER
+    =============================================== -->
+
+    <div id="page-loader" aria-hidden="true">
+
+        <div class="loader-container">
+
+            <div class="loader-ring"></div>
+
+            <div class="loader-core"></div>
+
+            <div class="loader-text">
+
+                Quantum Frequency Records
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==============================================
+            AUDIO PLACEHOLDER
+            (Persistent Player Added Later)
+    =============================================== -->
+
+    <audio
+        id="background-audio"
+        preload="none">
+    </audio>
+
+    <!-- ==============================================
+            ACCESSIBILITY
+    =============================================== -->
+
+    <a
+        class="skip-link"
+        href="#hero">
+
+        Skip to Main Content
+
+    </a>
+
+    <!-- ==============================================
+            JAVASCRIPT LIBRARIES
+    =============================================== -->
+
+    <!-- GSAP -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js">
+    </script>
+
+    <!-- Scroll Trigger -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js">
+    </script>
+
+    <!-- tsParticles -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js">
+    </script>
+
+    <!-- ==============================================
+            WEBSITE JAVASCRIPT
+    =============================================== -->
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/particles.js"></script>
+
+    <script src="assets/js/loader.js"></script>
+
+    <script>
+
+        window.addEventListener("load", () => {
+
+            document.body.classList.add("loaded");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+  
