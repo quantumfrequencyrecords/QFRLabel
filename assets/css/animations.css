@@ -1,1 +1,113 @@
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
 
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:
+
+translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:
+
+translateY(0);
+
+}
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+
+box-shadow:
+
+0 0 20px rgba(0,231,255,.20);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 70px rgba(0,231,255,.45);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 20px rgba(0,231,255,.20);
+
+}
+
+}
+
+@keyframes bounce{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes rotateSlow{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+.fade-up{
+
+animation:
+
+fadeUp
+
+1.2s ease forwards;
+
+}
+
+.glow{
+
+animation:
+
+pulseGlow
+
+4s infinite;
+
+}
