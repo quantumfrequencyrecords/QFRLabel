@@ -1,0 +1,393 @@
+/* ==========================================================
+   Quantum Frequency Records
+   Layout System
+   Version 1.0
+========================================================== */
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:var(--background);
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    position:relative;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    width:100%;
+
+    min-height:100vh;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ===========================
+   UNIVERSAL CONTAINER
+=========================== */
+
+.container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-content{
+
+    z-index:5;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:2rem;
+
+    width:min(900px,92%);
+
+}
+
+/* ===========================
+   LOGO SECTION
+=========================== */
+
+#logo-section{
+
+    position:absolute;
+
+    bottom:50px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:10;
+
+}
+
+#qfr-logo{
+
+    width:220px;
+
+    opacity:.9;
+
+    filter:
+
+        drop-shadow(0 0 30px rgba(0,231,255,.35));
+
+}
+
+/* ===========================
+   SCROLL INDICATOR
+=========================== */
+
+#scroll-indicator{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:.5rem;
+
+    color:var(--gray);
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+    z-index:20;
+
+}
+
+#scroll-indicator i{
+
+    color:var(--cyan);
+
+    animation:bounce 2s infinite;
+
+}
+
+/* ===========================
+   GLASS PANEL
+=========================== */
+
+.glass{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ===========================
+   UNIVERSAL GRID
+=========================== */
+
+.grid{
+
+    display:grid;
+
+    gap:2rem;
+
+}
+
+.grid-2{
+
+    grid-template-columns:
+
+        repeat(2,1fr);
+
+}
+
+.grid-3{
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+}
+
+.grid-4{
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+}
+
+/* ===========================
+   SPACING UTILITIES
+=========================== */
+
+.py-xl{
+
+    padding:8rem 0;
+
+}
+
+.py-lg{
+
+    padding:6rem 0;
+
+}
+
+.py{
+
+    padding:4rem 0;
+
+}
+
+.mt{
+
+    margin-top:2rem;
+
+}
+
+.mb{
+
+    margin-bottom:2rem;
+
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+
+.wave-divider{
+
+    width:100%;
+
+    height:120px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        rgba(0,231,255,.08)
+
+    );
+
+}
+
+/* ===========================
+   BACKGROUND LAYERS
+=========================== */
+
+#background-gradient{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+
+            circle at top,
+
+            rgba(0,231,255,.12),
+
+            transparent 55%
+
+        ),
+
+        radial-gradient(
+
+            circle at bottom,
+
+            rgba(0,200,184,.10),
+
+            transparent 55%
+
+        ),
+
+        var(--background);
+
+    z-index:-5;
+
+}
+
+#ambient-glow{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(0,231,255,.05),
+
+            transparent 70%
+
+        );
+
+    mix-blend-mode:screen;
+
+    z-index:-4;
+
+}
+
+#background-noise{
+
+    position:fixed;
+
+    inset:0;
+
+    opacity:.03;
+
+    background-image:
+
+    linear-gradient(
+
+        rgba(255,255,255,.1) 1px,
+
+        transparent 1px
+
+    ),
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.08) 1px,
+
+        transparent 1px
+
+    );
+
+    background-size:
+
+        120px 120px;
+
+    z-index:-3;
+
+}
+
+#particles-js{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+}
