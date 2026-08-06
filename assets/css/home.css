@@ -1,0 +1,347 @@
+/* ==========================================================
+   HOME PAGE
+   Quantum Frequency Records
+========================================================== */
+
+/* ---------- HEADER ---------- */
+
+#main-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(6,7,8,.72);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+#main-header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    height:82px;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+.logo img{
+
+    width:170px;
+
+}
+
+.navigation{
+
+    display:flex;
+
+    gap:2rem;
+
+    margin-left:3rem;
+
+    flex:1;
+
+}
+
+.navigation a{
+
+    color:var(--gray);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.navigation a:hover{
+
+    color:var(--cyan);
+
+}
+
+.store-link{
+
+    margin-left:auto;
+
+}
+
+.store-link a{
+
+    color:var(--cyan);
+
+    font-weight:700;
+
+}
+
+/* ---------- HERO ---------- */
+
+#homepage-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    background:
+        linear-gradient(rgba(6,7,8,.45),rgba(6,7,8,.80)),
+        url("../backgrounds/studio-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(0,231,255,.12),
+        transparent 60%);
+
+}
+
+.homepage-hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:760px;
+
+}
+
+.homepage-hero-content h1{
+
+    margin-bottom:1.5rem;
+
+}
+
+.homepage-hero-content p{
+
+    font-size:1.15rem;
+
+    margin-bottom:2rem;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+/* ---------- SECTION TITLES ---------- */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.section-title h2{
+
+    margin-bottom:.75rem;
+
+}
+
+.section-title p{
+
+    margin:auto;
+
+}
+
+/* ---------- LATEST ---------- */
+
+#latest{
+
+    padding:7rem 0;
+
+}
+
+.latest-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.latest-card{
+
+    padding:1.5rem;
+
+    transition:var(--transition);
+
+}
+
+.latest-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--glow);
+
+}
+
+.latest-card img{
+
+    margin:1rem 0;
+
+    border-radius:14px;
+
+}
+
+/* ---------- TRENDING ---------- */
+
+#trending{
+
+    padding:7rem 0;
+
+}
+
+.trending-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.stat-card{
+
+    padding:2rem;
+
+    text-align:center;
+
+}
+
+.stat-card i{
+
+    font-size:2.4rem;
+
+    color:var(--cyan);
+
+    margin-bottom:1rem;
+
+}
+
+/* ---------- NEWSLETTER ---------- */
+
+#newsletter{
+
+    padding:7rem 0;
+
+}
+
+.newsletter-panel{
+
+    padding:4rem;
+
+    text-align:center;
+
+}
+
+.newsletter-panel form{
+
+    margin-top:2rem;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+.newsletter-panel input{
+
+    width:420px;
+
+    max-width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:100px;
+
+    background:#151B23;
+
+    color:white;
+
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+
+    padding:5rem 0 3rem;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:3rem;
+
+}
+
+.footer-grid h4{
+
+    margin-bottom:1rem;
+
+}
+
+.footer-grid li{
+
+    margin-bottom:.6rem;
+
+}
