@@ -1,0 +1,95 @@
+/* ==========================================================
+   HERO
+========================================================== */
+
+#hero{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.hero-content h1{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-shadow:
+
+        0 0 40px rgba(0,231,255,.15);
+
+}
+
+.hero-content h1 span{
+
+    display:block;
+
+    margin-top:15px;
+
+    color:var(--white);
+
+}
+
+#animated-subtitle{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    font-size:1.15rem;
+
+    letter-spacing:2px;
+
+    color:var(--gray);
+
+}
+
+#animated-subtitle span{
+
+    transition:.5s;
+
+}
+
+#animated-subtitle span.active{
+
+    color:var(--cyan);
+
+    text-shadow:
+
+        0 0 25px var(--cyan);
+
+}
+
+#explore-button{
+
+    margin-top:60px;
+
+}
