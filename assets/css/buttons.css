@@ -1,0 +1,82 @@
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.button,
+button,
+#explore-button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:
+
+        18px 42px;
+
+    border-radius:100px;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            var(--cyan),
+
+            var(--teal)
+
+        );
+
+    color:#000;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+
+    box-shadow:
+
+        0 0 30px rgba(0,231,255,.25);
+
+}
+
+.button:hover,
+button:hover,
+#explore-button:hover{
+
+    transform:
+
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+
+        0 0 60px rgba(0,231,255,.45);
+
+}
+
+.button-secondary{
+
+    background:transparent;
+
+    color:var(--cyan);
+
+    border:
+
+        2px solid var(--cyan);
+
+}
+
+.button-secondary:hover{
+
+    background:
+
+        rgba(0,231,255,.08);
+
+}
