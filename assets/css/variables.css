@@ -1,1 +1,50 @@
+:root{
 
+/* Backgrounds */
+
+--background:#060708;
+--background-2:#0B1118;
+--panel:#10161E;
+
+/* Primary Colors */
+
+--cyan:#00E7FF;
+--cyan-light:#62FFFF;
+--teal:#00C8B8;
+
+/* Text */
+
+--white:#FFFFFF;
+--gray:#BAC4CE;
+--muted:#7D8894;
+
+/* Borders */
+
+--border:rgba(255,255,255,.08);
+
+/* Radius */
+
+--radius-small:10px;
+--radius:18px;
+--radius-large:30px;
+
+/* Shadows */
+
+--shadow:
+0 15px 45px rgba(0,0,0,.45);
+
+--glow:
+0 0 30px rgba(0,231,255,.35);
+
+/* Fonts */
+
+--font:
+'Montserrat',
+sans-serif;
+
+/* Transition */
+
+--transition:
+.35s ease;
+
+}
