@@ -1,7 +1,7 @@
 {
-  "id": "buckshot-bourbon",
-  "name": "Buckshot bourbon",
-  "slug": "buckshot-bourbon",
+  "id": "sawyer-kennedy",
+  "name": "Sawyer kennedy",
+  "slug": "sawyer-kennedy",
 
   "genre": [
     "Industrial Rock",
@@ -14,17 +14,17 @@
 
   "tagline": "Music for minds that refuse to be programmed.",
 
-  "shortBio": "Buckshot bourbon creates cinematic industrial rock built around tension, rebellion, technology and the struggle to think independently.",
+  "shortBio": "Sawyer kennedy creates cinematic industrial rock built around tension, rebellion, technology and the struggle to think independently.",
 
-  "biography": "Buckshot bourbon emerged from the collision of modern industrial rock, alternative songwriting and cinematic electronic production. Their music explores the invisible forces that shape modern life — media, technology, fear, influence and the human desire to remain free. Heavy guitars, atmospheric electronics and emotionally charged vocals create a sound that feels equally at home in a dark club, a stadium or the soundtrack to a dystopian future.",
+  "biography": "Sawyer kennedy emerged from the collision of modern industrial rock, alternative songwriting and cinematic electronic production. Their music explores the invisible forces that shape modern life — media, technology, fear, influence and the human desire to remain free. Heavy guitars, atmospheric electronics and emotionally charged vocals create a sound that feels equally at home in a dark club, a stadium or the soundtrack to a dystopian future.",
 
   "quote": "The world is loud. We make music for the people trying to hear themselves think.",
 
-  "logo": "assets/logos/artists/buckshot-bourbon.png",
+  "logo": "assets/logos/artists/sawyer-kennedy.png",
 
-  "heroImage": "assets/images/artists/buckshot-bourbon/hero.jpg",
+  "heroImage": "assets/images/artists/sawyer-kennedy/hero.jpg",
 
-  "profileImage": "assets/images/artists/buckshot-bourbon/profile.jpg",
+  "profileImage": "assets/images/artists/sawyer-kennedy/profile.jpg",
 
   "socials": {
     "instagram": "#",
@@ -40,7 +40,7 @@
       "name": "Alex Voss",
       "role": "Lead Vocals / Guitar",
       "hometown": "Chicago, Illinois",
-      "image": "assets/images/artists/buckshot-bourbon/members/alex-voss.jpg",
+      "image": "assets/images/artists/sawyer-kennedy/members/alex-voss.jpg",
       "shortBio": "Frontman and primary lyricist known for a powerful, cinematic vocal delivery.",
       "biography": "Alex Voss developed a fascination with music through guitar, industrial production and alternative rock. His writing focuses on identity, technology, social pressure and the conflict between individuality and conformity."
     },
@@ -50,9 +50,9 @@
       "name": "Mason Reed",
       "role": "Guitar / Production",
       "hometown": "Detroit, Michigan",
-      "image": "assets/images/artists/buckshot-bourbon/members/mason-reed.jpg",
+      "image": "assets/images/artists/sawyer-kennedy/members/mason-reed.jpg",
       "shortBio": "Guitarist and producer responsible for much of the band's electronic texture.",
-      "biography": "Mason Reed combines traditional guitar production with electronic sound design, creating the dense atmospheric layers that define Buckshot bourbon's recordings."
+      "biography": "Mason Reed combines traditional guitar production with electronic sound design, creating the dense atmospheric layers that define Sawyer kennedy's recordings."
     },
 
     {
@@ -60,7 +60,7 @@
       "name": "Riley Cross",
       "role": "Bass",
       "hometown": "Milwaukee, Wisconsin",
-      "image": "assets/images/artists/buckshot-bourbon/members/riley-cross.jpg",
+      "image": "assets/images/artists/sawyer-kennedy/members/riley-cross.jpg",
       "shortBio": "Bass player responsible for the band's deep rhythmic foundation.",
       "biography": "Riley Cross approaches bass as both a rhythmic and atmospheric instrument, combining aggressive low-end tones with melodic movement."
     },
@@ -70,9 +70,9 @@
       "name": "Jordan Kane",
       "role": "Drums / Percussion",
       "hometown": "Indianapolis, Indiana",
-      "image": "assets/images/artists/buckshot-bourbon/members/jordan-kane.jpg",
+      "image": "assets/images/artists/sawyer-kennedy/members/jordan-kane.jpg",
       "shortBio": "Drummer combining live performance energy with precision electronic percussion.",
-      "biography": "Jordan Kane blends live drums with programmed percussion to create the explosive rhythmic foundation heard throughout Buckshot bourbon's music."
+      "biography": "Jordan Kane blends live drums with programmed percussion to create the explosive rhythmic foundation heard throughout Sawyer kennedy's music."
     }
   ],
 
@@ -93,7 +93,7 @@
       "year": "2025",
       "type": "Album",
       "artwork": "assets/images/albums/signal-through-the-noise.jpg",
-      "description": "Buckshot bourbon's debut collection of industrial alternative rock.",
+      "description": "Sawyer kennedy's debut collection of industrial alternative rock.",
       "songCount": 11
     }
   ],
@@ -116,26 +116,26 @@
 
   "gallery": {
     "hero": [
-      "assets/images/artists/buckshot-bourbon/gallery/hero-01.jpg",
-      "assets/images/artists/buckshot-bourbon/gallery/hero-02.jpg"
+      "assets/images/artists/sawyer-kennedy/gallery/hero-01.jpg",
+      "assets/images/artists/sawyer-kennedy/gallery/hero-02.jpg"
     ],
 
     "live": [
-      "assets/images/artists/buckshot-bourbon/gallery/live-01.jpg",
-      "assets/images/artists/buckshot-bourbon/gallery/live-02.jpg"
+      "assets/images/artists/sawyer-kennedy/gallery/live-01.jpg",
+      "assets/images/artists/sawyer-kennedy/gallery/live-02.jpg"
     ],
 
     "members": [
-      "assets/images/artists/buckshot-bourbon/gallery/members-01.jpg"
+      "assets/images/artists/sawyer-kennedy/gallery/members-01.jpg"
     ]
   },
 
   "news": [
     {
       "date": "2026-08-01",
-      "title": "Buckshot bourbon Announces New Album",
+      "title": "Sawyer kennedy Announces New Album",
       "summary": "The band prepares to release their latest collection of industrial rock.",
-      "image": "assets/images/artists/buckshot-bourbon/news/news-01.jpg"
+      "image": "assets/images/artists/sawyer-kennedy/news/news-01.jpg"
     }
   ]
 }
