@@ -111,3 +111,23 @@ pulseGlow
 4s infinite;
 
 }
+
+body{
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+body.loaded{
+
+opacity:1;
+
+}
+
+body.page-exit{
+
+opacity:0;
+
+}
