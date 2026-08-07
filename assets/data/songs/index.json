@@ -1,0 +1,14 @@
+{
+  "songs": [
+    {
+      "id": "island-time",
+      "title": "Island Time",
+      "artistId": "buckshot-bourbon",
+      "albumId": "first-rounds-on-me",
+      "artwork": "assets/images/songs/buckshot-bourbon/island-time.jpg",
+      "releaseDate": "2026-08-01",
+      "featured": false,
+      "status": "released"
+    }
+  ]
+}
