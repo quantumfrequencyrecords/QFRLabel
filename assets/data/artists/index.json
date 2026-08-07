@@ -1,44 +1,34 @@
 {
   "artists": [
     {
-      "id": "aethyur",
-      "name": "Aethyur",
-      "genre": ["Electronic", "Experimental"],
-      "hometown": "",
-      "image": "assets/images/artists/aethyur/profile.jpg",
-      "logo": "assets/logos/artists/aethyur.png",
-      "active": true,
-      "sortOrder": 1
-    },
-    {
       "id": "buckshot-bourbon",
       "name": "Buckshot Bourbon",
       "genre": ["Country", "Southern Rock"],
-      "hometown": "",
+      "hometown": "Oceanside, NY",
       "image": "assets/images/artists/buckshot-bourbon/profile.jpg",
-      "logo": "assets/logos/artists/buckshot-bourbon.png",
+      "logo": "assets/logos/artists/lbuckshot-bourbon-logo.png",
       "active": true,
-      "sortOrder": 2
+      "sortOrder": 1
     },
     {
       "id": "false-kings",
       "name": "False Kings",
       "genre": ["Alternative Rock"],
-      "hometown": "",
+      "hometown": "Amityville, NY",
       "image": "assets/images/artists/false-kings/profile.jpg",
-      "logo": "assets/logos/artists/false-kings.png",
+      "logo": "assets/logos/artists/false-kings-logo.png",
       "active": true,
-      "sortOrder": 3
+      "sortOrder": 2
     },
     {
       "id": "find-replace",
       "name": "Find/Replace",
       "genre": ["Electronic", "Alternative"],
-      "hometown": "",
+      "hometown": "New York, NY",
       "image": "assets/images/artists/find-replace/profile.jpg",
-      "logo": "assets/logos/artists/find-replace.png",
+      "logo": "assets/logos/artists/find-replace-logo.png",
       "active": true,
-      "sortOrder": 4
+      "sortOrder": 3
     },
     {
       "id": "firewall-nation",
@@ -46,40 +36,52 @@
       "genre": ["Industrial Rock", "Alternative Rock"],
       "hometown": "Chicago, Illinois",
       "image": "assets/images/artists/firewall-nation/profile.jpg",
-      "logo": "assets/logos/artists/firewall-nation.png",
+      "logo": "assets/logos/artists/firewall-nation-logo.png",
       "active": true,
-      "sortOrder": 5
+      "sortOrder": 4
     },
     {
       "id": "fractal-hearts",
       "name": "Fractal Hearts",
-      "genre": ["Indie", "Alternative"],
-      "hometown": "",
+      "genre": ["Indie", "Alternative", “Space Rock”],
+      "hometown": "Ocean City, MD",
       "image": "assets/images/artists/fractal-hearts/profile.jpg",
-      "logo": "assets/logos/artists/fractal-hearts.png",
+      "logo": "assets/logos/artists/fractal-hearts-logo.png",
       "active": true,
-      "sortOrder": 6
+      "sortOrder": 5
     },
     {
       "id": "grassroots-rebellion",
       "name": "Grassroots Rebellion",
-      "genre": ["Rock", "Alternative"],
-      "hometown": "",
+      "genre": ["Rock", “Punk”, "Alternative"],
+      "hometown": "Washington, DC",
       "image": "assets/images/artists/grassroots-rebellion/profile.jpg",
-      "logo": "assets/logos/artists/grassroots-rebellion.png",
+      "logo": "assets/logos/artists/grassroots-rebellion-logo.png",
       "active": true,
-      "sortOrder": 7
+      "sortOrder": 6
     },
     {
       "id": "immortal-prophets",
       "name": "Immortal Prophets",
-      "genre": ["Rock", "Industrial"],
-      "hometown": "",
+      "genre": ["Nu-Metal", "Industrial"],
+      "hometown": "Philadelphia, PA",
       "image": "assets/images/artists/immortal-prophets/profile.jpg",
-      "logo": "assets/logos/artists/immortal-prophets.png",
+      "logo": "assets/logos/artists/immortal-prophets-logo.png",
+      "active": true,
+      "sortOrder": 7
+    },
+
+    {
+      "id": "immovable-giants",
+      "name": "Immovable Giants",
+      "genre": ["Indie", "Folk", “Alternative”],
+      "hometown": "Massapequa Park, NY",
+      "image": "assets/images/artists/immovable-giants/profile.jpg",
+      "logo": "assets/logos/artists/immovable-giants-logo.png",
       "active": true,
       "sortOrder": 8
     },
+
     {
       "id": "moonflower-radio",
       "name": "Moonflower Radio",
@@ -93,30 +95,30 @@
     {
       "id": "sound-shamans",
       "name": "Sound Shamans",
-      "genre": ["Electronic", "EDM"],
-      "hometown": "",
+      "genre": ["Pop", "Indie"],
+      "hometown": "Weehawken, NJ",
       "image": "assets/images/artists/sound-shamans/profile.jpg",
-      "logo": "assets/logos/artists/sound-shamans.png",
+      "logo": "assets/logos/artists/sound-shamans-logo.png",
       "active": true,
       "sortOrder": 10
     },
     {
-      "id": "the-cosmic-run",
-      "name": "The Cosmic Run",
-      "genre": ["Electronic", "Rock"],
-      "hometown": "",
-      "image": "assets/images/artists/the-cosmic-run/profile.jpg",
-      "logo": "assets/logos/artists/the-cosmic-run.png",
+      "id": "warpnotix",
+      "name": "Warpnotix”,
+      "genre": ["Electronic", "EDM", “Rock”],
+      "hometown": "Boston, MS",
+      "image": "assets/images/artists/warpnotix/profile.jpg",
+      "logo": "assets/logos/artists/warpnotix-logo.png",
       "active": true,
       "sortOrder": 11
     },
     {
-      "id": "tucker-kennedy",
-      "name": "Tucker Kennedy",
+      "id": "sawyer-kennedy",
+      "name": "Sawyer Kennedy",
       "genre": ["Country", "Pop"],
-      "hometown": "",
-      "image": "assets/images/artists/tucker-kennedy/profile.jpg",
-      "logo": "assets/logos/artists/tucker-kennedy.png",
+      "hometown": "Oceanside, NY",
+      "image": "assets/images/artists/sawyer-kennedy/profile.jpg",
+      "logo": "assets/logos/artists/sawyer-kennedy-logo.png",
       "active": true,
       "sortOrder": 12
     }
