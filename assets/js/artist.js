@@ -175,9 +175,9 @@ function renderArtist(artist) {
 
     /* ALBUMS */
 
-    renderAlbums(
-        artist.albums || []
-    );
+    loadArtistAlbums(
+    artist.albums || []
+);
 
 
     /* VIDEOS */
