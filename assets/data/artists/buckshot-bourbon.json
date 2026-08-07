@@ -77,26 +77,8 @@
   ],
 
   "albums": [
-    {
-      "id": "in-the-crosshairs",
-      "title": "In The Crosshairs",
-      "year": "2026",
-      "type": "Album",
-      "artwork": "assets/images/albums/in-the-crosshairs.jpg",
-      "description": "A cinematic industrial rock album exploring influence, surveillance, fear and independent thought.",
-      "songCount": 10
-    },
-
-    {
-      "id": "signal-through-the-noise",
-      "title": "Signal Through The Noise",
-      "year": "2025",
-      "type": "Album",
-      "artwork": "assets/images/albums/signal-through-the-noise.jpg",
-      "description": "Buckshot bourbon's debut collection of industrial alternative rock.",
-      "songCount": 11
-    }
-  ],
+  "first-rounds-on-me"
+]
 
   "latestSong": {
     "id": "signal-lost",
