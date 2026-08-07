@@ -1,1 +1,84 @@
+{
+  "id": "island-time ",
 
+  "title": "Island Time",
+
+  "artistId": "buckshot-bourbon",
+
+  "albumId": "first-rounds-on-me",
+
+  "trackNumber": 3,
+
+  "releaseDate": "2026-08-01",
+
+  "type": "Album Track",
+
+  "genre": [
+    "Country Rock",
+    "Nashville Country"
+  ],
+
+  "duration": "3:44",
+
+  "artwork": "assets/images/songs/buckshot-bourbon/first-rounds-on-me/island-time.jpg",
+
+  "audio": {
+    "enabled": true,
+    "file": "assets/songs/buckshot-bourbon/island-time.mp3”
+    "format": "mp3"
+  },
+
+  "streaming": {
+
+    "spotify": {
+      "enabled": false,
+      "url": ""
+    },
+
+    "appleMusic": {
+      "enabled": false,
+      "url": ""
+    },
+
+    "youtube": {
+      "enabled": false,
+      "url": ""
+    }
+
+  },
+
+  "lyrics": {
+    "available": true,
+    "file": "assets/data/lyrics/buckshot-bourbon/island-timetxt"
+  },
+
+  "credits": {
+
+    "writtenBy": [
+      "Alex Voss"
+    ],
+
+    "producedBy": [
+      "Tucker Kennedy"
+    ],
+
+    "performedBy": [
+      "Buckshot Bourbon"
+    ]
+
+  },
+
+  "tags": [
+    "Country",
+    "rock",
+    "Nashville",
+    "Relaxing",
+    "Fun"
+  ],
+
+  "featured": false,
+
+  "explicit": false,
+
+  "status": "released"
+}
