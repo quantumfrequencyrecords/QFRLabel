@@ -1,1 +1,13 @@
-
+{
+  "albums": [
+    {
+      "id": "first-rounds-on-me",
+      "title": "First Rounds On Me",
+      "artistId": "buckshot-bourbon",
+      "year": 2026,
+      "artwork": "assets/images/albums/first-rounds-on-me-cover.jpg",
+      "featured": true,
+      "status": "released"
+    }
+  ]
+}
