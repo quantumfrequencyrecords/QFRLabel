@@ -506,3 +506,44 @@ display:grid;
 display:none;
 
 }
+/*=========================================
+TOAST
+=========================================*/
+
+.qfr-toast{
+
+position:fixed;
+
+top:100px;
+
+right:30px;
+
+padding:18px 28px;
+
+background:rgba(10,15,22,.95);
+
+border-left:5px solid var(--cyan);
+
+border-radius:14px;
+
+color:white;
+
+opacity:0;
+
+transform:translateX(40px);
+
+transition:.35s;
+
+z-index:999999;
+
+box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+}
+
+.qfr-toast.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
