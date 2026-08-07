@@ -65,3 +65,20 @@ gap:5px;
 }
 
 }
+@media(max-width:1000px){
+
+.featured-release{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.featured-buttons{
+
+justify-content:center;
+
+}
+
+}
