@@ -1,0 +1,124 @@
+{
+  "artists": [
+    {
+      "id": "aethyur",
+      "name": "Aethyur",
+      "genre": ["Electronic", "Experimental"],
+      "hometown": "",
+      "image": "assets/images/artists/aethyur/profile.jpg",
+      "logo": "assets/logos/artists/aethyur.png",
+      "active": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "buckshot-bourbon",
+      "name": "Buckshot Bourbon",
+      "genre": ["Country", "Southern Rock"],
+      "hometown": "",
+      "image": "assets/images/artists/buckshot-bourbon/profile.jpg",
+      "logo": "assets/logos/artists/buckshot-bourbon.png",
+      "active": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "false-kings",
+      "name": "False Kings",
+      "genre": ["Alternative Rock"],
+      "hometown": "",
+      "image": "assets/images/artists/false-kings/profile.jpg",
+      "logo": "assets/logos/artists/false-kings.png",
+      "active": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "find-replace",
+      "name": "Find/Replace",
+      "genre": ["Electronic", "Alternative"],
+      "hometown": "",
+      "image": "assets/images/artists/find-replace/profile.jpg",
+      "logo": "assets/logos/artists/find-replace.png",
+      "active": true,
+      "sortOrder": 4
+    },
+    {
+      "id": "firewall-nation",
+      "name": "Firewall Nation",
+      "genre": ["Industrial Rock", "Alternative Rock"],
+      "hometown": "Chicago, Illinois",
+      "image": "assets/images/artists/firewall-nation/profile.jpg",
+      "logo": "assets/logos/artists/firewall-nation.png",
+      "active": true,
+      "sortOrder": 5
+    },
+    {
+      "id": "fractal-hearts",
+      "name": "Fractal Hearts",
+      "genre": ["Indie", "Alternative"],
+      "hometown": "",
+      "image": "assets/images/artists/fractal-hearts/profile.jpg",
+      "logo": "assets/logos/artists/fractal-hearts.png",
+      "active": true,
+      "sortOrder": 6
+    },
+    {
+      "id": "grassroots-rebellion",
+      "name": "Grassroots Rebellion",
+      "genre": ["Rock", "Alternative"],
+      "hometown": "",
+      "image": "assets/images/artists/grassroots-rebellion/profile.jpg",
+      "logo": "assets/logos/artists/grassroots-rebellion.png",
+      "active": true,
+      "sortOrder": 7
+    },
+    {
+      "id": "immortal-prophets",
+      "name": "Immortal Prophets",
+      "genre": ["Rock", "Industrial"],
+      "hometown": "",
+      "image": "assets/images/artists/immortal-prophets/profile.jpg",
+      "logo": "assets/logos/artists/immortal-prophets.png",
+      "active": true,
+      "sortOrder": 8
+    },
+    {
+      "id": "moonflower-radio",
+      "name": "Moonflower Radio",
+      "genre": ["Indie Pop", "Alternative"],
+      "hometown": "",
+      "image": "assets/images/artists/moonflower-radio/profile.jpg",
+      "logo": "assets/logos/artists/moonflower-radio.png",
+      "active": true,
+      "sortOrder": 9
+    },
+    {
+      "id": "sound-shamans",
+      "name": "Sound Shamans",
+      "genre": ["Electronic", "EDM"],
+      "hometown": "",
+      "image": "assets/images/artists/sound-shamans/profile.jpg",
+      "logo": "assets/logos/artists/sound-shamans.png",
+      "active": true,
+      "sortOrder": 10
+    },
+    {
+      "id": "the-cosmic-run",
+      "name": "The Cosmic Run",
+      "genre": ["Electronic", "Rock"],
+      "hometown": "",
+      "image": "assets/images/artists/the-cosmic-run/profile.jpg",
+      "logo": "assets/logos/artists/the-cosmic-run.png",
+      "active": true,
+      "sortOrder": 11
+    },
+    {
+      "id": "tucker-kennedy",
+      "name": "Tucker Kennedy",
+      "genre": ["Country", "Pop"],
+      "hometown": "",
+      "image": "assets/images/artists/tucker-kennedy/profile.jpg",
+      "logo": "assets/logos/artists/tucker-kennedy.png",
+      "active": true,
+      "sortOrder": 12
+    }
+  ]
+}
