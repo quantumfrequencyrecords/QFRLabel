@@ -1,0 +1,45 @@
+/* =======================================
+ARTIST CAROUSEL
+======================================= */
+
+.artist-carousel{
+
+display:grid;
+
+grid-auto-flow:column;
+
+grid-auto-columns:290px;
+
+gap:28px;
+
+overflow-x:auto;
+
+padding-bottom:10px;
+
+scroll-snap-type:x mandatory;
+
+}
+
+.artist-carousel::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.artist-carousel .artist-card{
+
+padding:22px;
+
+scroll-snap-align:start;
+
+}
+
+.artist-carousel img{
+
+width:100%;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+}
