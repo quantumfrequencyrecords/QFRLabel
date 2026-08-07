@@ -1,0 +1,740 @@
+/* ==========================================================
+   QUANTUM FREQUENCY RECORDS
+   UNIVERSAL ARTIST PAGE
+========================================================== */
+
+
+/* HERO */
+
+.artist-hero{
+
+    min-height:720px;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#05070a;
+
+}
+
+.artist-hero-background{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    opacity:.45;
+
+    filter:saturate(.8);
+
+    transform:scale(1.04);
+
+}
+
+.artist-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,5,8,.98) 0%,
+            rgba(3,5,8,.75) 45%,
+            rgba(3,5,8,.35) 100%
+        ),
+
+        linear-gradient(
+            0deg,
+            #05070a 0%,
+            transparent 55%
+        );
+
+}
+
+.artist-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:750px;
+
+    padding-top:80px;
+
+}
+
+.artist-logo{
+
+    width:180px;
+
+    max-height:130px;
+
+    object-fit:contain;
+
+    object-position:left;
+
+    margin-bottom:30px;
+
+}
+
+.artist-hero h1{
+
+    font-size:clamp(3.5rem,7vw,7rem);
+
+    line-height:.95;
+
+    margin:20px 0;
+
+}
+
+.artist-tagline{
+
+    font-size:1.3rem;
+
+    color:var(--gray);
+
+    max-width:650px;
+
+}
+
+.artist-hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* ARTIST NAVIGATION */
+
+.artist-navigation{
+
+    position:sticky;
+
+    top:82px;
+
+    z-index:500;
+
+    background:rgba(7,10,14,.88);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.07);
+
+}
+
+.artist-navigation .container{
+
+    display:flex;
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+
+}
+
+.artist-navigation .container::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.artist-navigation a{
+
+    padding:20px 24px;
+
+    color:var(--gray);
+
+    white-space:nowrap;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.artist-navigation a:hover{
+
+    color:var(--cyan);
+
+}
+
+
+/* SECTIONS */
+
+.artist-section{
+
+    padding:100px 0;
+
+}
+
+
+/* PROFILE */
+
+.artist-profile-grid{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:70px;
+
+    align-items:start;
+
+}
+
+.artist-profile-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.5);
+
+}
+
+.artist-profile-content h2{
+
+    margin:20px 0;
+
+}
+
+.artist-lead{
+
+    font-size:1.25rem;
+
+    line-height:1.8;
+
+}
+
+.artist-biography{
+
+    margin-top:25px;
+
+    line-height:1.9;
+
+    overflow:hidden;
+
+    transition:max-height .5s ease;
+
+}
+
+.artist-biography.collapsed{
+
+    max-height:120px;
+
+}
+
+.artist-biography.expanded{
+
+    max-height:2000px;
+
+}
+
+.text-button{
+
+    background:none;
+
+    border:none;
+
+    color:var(--cyan);
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    padding:15px 0;
+
+}
+
+.artist-socials{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.artist-socials a{
+
+    width:45px;
+
+    height:45px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+.artist-socials a:hover{
+
+    color:var(--cyan);
+
+    border-color:var(--cyan);
+
+}
+
+
+/* STATS */
+
+.artist-stats-section{
+
+    padding-top:0;
+
+}
+
+.artist-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.artist-stat{
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+.artist-stat span{
+
+    display:block;
+
+    font-size:2.8rem;
+
+    font-weight:800;
+
+    color:var(--cyan);
+
+}
+
+.artist-stat small{
+
+    color:var(--gray);
+
+}
+
+
+/* NEWS */
+
+.artist-news-list{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.artist-news-card{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:30px;
+
+    padding:25px;
+
+}
+
+.artist-news-card img{
+
+    width:100%;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+}
+
+
+/* ALBUMS */
+
+.artist-albums{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+.artist-album{
+
+    padding:30px;
+
+}
+
+.artist-album-header{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr auto;
+
+    gap:30px;
+
+    align-items:center;
+
+}
+
+.artist-album-art{
+
+    width:180px;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+}
+
+.artist-album-songs{
+
+    margin-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.artist-song{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px 5px;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.artist-song-number{
+
+    width:30px;
+
+    color:var(--gray);
+
+}
+
+.artist-song-title{
+
+    flex:1;
+
+}
+
+.song-action{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:none;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.song-action:hover{
+
+    color:var(--cyan);
+
+    border-color:var(--cyan);
+
+}
+
+
+/* VIDEOS */
+
+.artist-videos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.artist-video{
+
+    overflow:hidden;
+
+}
+
+.artist-video-thumbnail{
+
+    position:relative;
+
+}
+
+.artist-video-thumbnail img{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+}
+
+.artist-video-play{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,.25);
+
+}
+
+.artist-video-play span{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,231,255,.85);
+
+    color:#000;
+
+}
+
+
+/* MEMBERS */
+
+.artist-members-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.artist-member{
+
+    overflow:hidden;
+
+}
+
+.artist-member img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+}
+
+.artist-member-info{
+
+    padding:20px;
+
+}
+
+.artist-member-info h3{
+
+    margin-bottom:7px;
+
+}
+
+.artist-member-info p{
+
+    color:var(--gray);
+
+}
+
+
+/* GALLERY */
+
+.artist-gallery-grid{
+
+    columns:4 250px;
+
+    column-gap:18px;
+
+}
+
+.artist-gallery-item{
+
+    break-inside:avoid;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+}
+
+.artist-gallery-item img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.artist-gallery-item:hover img{
+
+    transform:scale(1.04);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+    .artist-profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artist-stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .artist-videos-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .artist-members-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .artist-album-header{
+
+        grid-template-columns:130px 1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .artist-hero{
+
+        min-height:650px;
+
+    }
+
+    .artist-hero h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .artist-section{
+
+        padding:70px 0;
+
+    }
+
+    .artist-stats-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .artist-news-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artist-album-header{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artist-album-art{
+
+        width:100%;
+
+        max-width:250px;
+
+    }
+
+    .artist-videos-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artist-members-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
