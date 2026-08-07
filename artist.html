@@ -1,1 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Artist | Quantum Frequency Records</title>
+
+    <meta
+        name="description"
+        content="Artist profile — Quantum Frequency Records"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/artist.css"
+    >
+
+</head>
+
+<body>
+
+<div id="background-gradient"></div>
+
+<div id="particles-js"></div>
+
+<div id="ambient-glow"></div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header id="main-header">
+
+    <div class="container">
+
+        <nav>
+
+            <a
+                class="logo"
+                href="home.html"
+            >
+
+                <img
+                    src="assets/logos/qfr-logo.png"
+                    alt="Quantum Frequency Records"
+                >
+
+            </a>
+
+            <button
+                id="mobile-menu-button"
+                aria-label="Open navigation"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+
+                <li>
+                    <a
+                        href="artists.html"
+                        class="active"
+                    >
+                        Artists
+                    </a>
+                </li>
+
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+
+                <li>
+                    <a href="videos.html">Videos</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+            <div class="store-link">
+
+                <a href="store.html">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    Store
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     ARTIST HERO
+================================================== -->
+
+<main id="artist-page">
+
+
+<section
+    id="artist-hero"
+    class="artist-hero"
+>
+
+    <div class="artist-hero-background"></div>
+
+    <div class="artist-hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="artist-hero-content">
+
+            <img
+                id="artist-logo"
+                class="artist-logo"
+                alt=""
+            >
+
+            <span
+                id="artist-genre"
+                class="pill"
+            >
+            </span>
+
+            <h1 id="artist-name">
+            </h1>
+
+            <p
+                id="artist-tagline"
+                class="artist-tagline"
+            >
+            </p>
+
+            <div class="artist-hero-buttons">
+
+                <button
+                    id="artist-play"
+                    class="button"
+                >
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Play Artist
+
+                </button>
+
+                <a
+                    href="#artist-music"
+                    class="button-secondary"
+                >
+
+                    Explore Music
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ARTIST NAVIGATION
+================================================== -->
+
+<nav
+    id="artist-navigation"
+    class="artist-navigation"
+>
+
+    <div class="container">
+
+        <a href="#artist-profile">
+            Profile
+        </a>
+
+        <a href="#artist-news">
+            News
+        </a>
+
+        <a href="#artist-music">
+            Music
+        </a>
+
+        <a href="#artist-videos">
+            Videos
+        </a>
+
+        <a href="#artist-members">
+            Members
+        </a>
+
+        <a href="#artist-gallery">
+            Gallery
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==================================================
+     PROFILE
+================================================== -->
+
+<section
+    id="artist-profile"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="artist-profile-grid">
+
+
+            <div class="artist-profile-image">
+
+                <img
+                    id="artist-profile-image"
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="artist-profile-content">
+
+                <span class="pill">
+                    ARTIST PROFILE
+                </span>
+
+                <h2>
+                    The Story
+                </h2>
+
+                <p
+                    id="artist-short-bio"
+                    class="artist-lead"
+                >
+                </p>
+
+                <div
+                    id="artist-biography"
+                    class="artist-biography collapsed"
+                >
+                </div>
+
+                <button
+                    id="bio-toggle"
+                    class="text-button"
+                >
+
+                    Full Bio +
+
+                </button>
+
+                <div
+                    id="artist-socials"
+                    class="artist-socials"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ARTIST STATS
+================================================== -->
+
+<section
+    id="artist-stats"
+    class="artist-section artist-stats-section"
+>
+
+    <div class="container">
+
+        <div class="artist-stats-grid">
+
+            <div class="artist-stat glass-panel">
+
+                <span id="album-count">
+                    0
+                </span>
+
+                <small>
+                    Albums
+                </small>
+
+            </div>
+
+            <div class="artist-stat glass-panel">
+
+                <span id="song-count">
+                    0
+                </span>
+
+                <small>
+                    Songs
+                </small>
+
+            </div>
+
+            <div class="artist-stat glass-panel">
+
+                <span id="video-count">
+                    0
+                </span>
+
+                <small>
+                    Videos
+                </small>
+
+            </div>
+
+            <div class="artist-stat glass-panel">
+
+                <span id="member-count">
+                    0
+                </span>
+
+                <small>
+                    Members
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     NEWS
+================================================== -->
+
+<section
+    id="artist-news"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="pill">
+                LATEST
+            </span>
+
+            <h2>
+                Artist News
+            </h2>
+
+        </div>
+
+        <div
+            id="artist-news-list"
+            class="artist-news-list"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MUSIC
+================================================== -->
+
+<section
+    id="artist-music"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="pill">
+                DISCOGRAPHY
+            </span>
+
+            <h2>
+                Music
+            </h2>
+
+            <p>
+                Explore albums, singles and songs.
+            </p>
+
+        </div>
+
+        <div
+            id="artist-albums"
+            class="artist-albums"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     VIDEOS
+================================================== -->
+
+<section
+    id="artist-videos"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="pill">
+                WATCH
+            </span>
+
+            <h2>
+                Videos
+            </h2>
+
+        </div>
+
+        <div
+            id="artist-videos-grid"
+            class="artist-videos-grid"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     BAND MEMBERS
+================================================== -->
+
+<section
+    id="artist-members"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="pill">
+                THE BAND
+            </span>
+
+            <h2>
+                Meet The Members
+            </h2>
+
+            <p>
+                The people behind the frequency.
+            </p>
+
+        </div>
+
+        <div
+            id="artist-members-grid"
+            class="artist-members-grid"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     GALLERY
+================================================== -->
+
+<section
+    id="artist-gallery"
+    class="artist-section"
+>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="pill">
+                GALLERY
+            </span>
+
+            <h2>
+                Inside The Frequency
+            </h2>
+
+        </div>
+
+        <div
+            id="artist-gallery-grid"
+            class="artist-gallery-grid"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img
+                    src="assets/logos/qfr-logo.png"
+                    alt="Quantum Frequency Records"
+                    width="180"
+                >
+
+                <p>
+                    Discover • Harness • Nurture • Succeed
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="artists.html">Artists</a>
+                    </li>
+
+                    <li>
+                        <a href="music.html">Music</a>
+                    </li>
+
+                    <li>
+                        <a href="videos.html">Videos</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Quantum Frequency Records.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     GLOBAL MODAL
+================================================== -->
+
+<div id="qfr-modal">
+
+    <div class="modal-window">
+
+        <button
+            onclick="QFR.modal.close()"
+            aria-label="Close"
+        >
+            ✕
+        </button>
+
+        <div class="modal-body"></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/particles.js"></script>
+
+<script src="assets/js/modal.js"></script>
+
+<script src="assets/js/artist.js"></script>
+
+</body>
+
+</html>
