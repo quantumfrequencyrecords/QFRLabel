@@ -1,1 +1,55 @@
+/* =======================================
+NEWS TICKER
+======================================= */
 
+#news-ticker{
+
+overflow:hidden;
+
+padding:18px 0;
+
+background:rgba(255,255,255,.03);
+
+border-top:1px solid rgba(255,255,255,.05);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.ticker-track{
+
+display:inline-block;
+
+white-space:nowrap;
+
+padding-left:100%;
+
+animation:ticker 28s linear infinite;
+
+}
+
+.ticker-track span{
+
+margin-right:60px;
+
+color:var(--gray);
+
+font-weight:600;
+
+}
+
+@keyframes ticker{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-100%);
+
+}
+
+}
