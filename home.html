@@ -235,7 +235,211 @@ Moonflower Radio releases new single •
 </span>
 
 <span>
+/* =======================================
+NEWS TICKER
+======================================= */
 
+#news-ticker{
+
+overflow:hidden;
+
+padding:18px 0;
+
+background:rgba(255,255,255,.03);
+
+border-top:1px solid rgba(255,255,255,.05);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.ticker-track{
+
+display:inline-block;
+
+white-space:nowrap;
+
+padding-left:100%;
+
+animation:ticker 28s linear infinite;
+
+}
+
+.ticker-track span{
+
+margin-right:60px;
+
+color:var(--gray);
+
+font-weight:600;
+
+}
+
+@keyframes ticker{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-100%);
+
+}
+
+}
+<section id="featured-artists">
+
+<div class="container">
+
+<div class="section-header">
+
+<div class="section-heading">
+
+<h2>
+
+Featured Artists
+
+</h2>
+
+<p>
+
+Discover the voices defining Quantum Frequency Records.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="artist-carousel">
+
+<div class="artist-card glass-panel">
+
+<img src="assets/images/placeholders/artist1.jpg">
+
+<h3>
+
+Firewall Nation
+
+</h3>
+
+<p>
+
+Industrial Rock
+
+</p>
+
+</div>
+
+<div class="artist-card glass-panel">
+
+<img src="assets/images/placeholders/artist2.jpg">
+
+<h3>
+
+Fractal Hearts
+
+</h3>
+
+<p>
+
+Alternative
+
+</p>
+
+</div>
+
+<div class="artist-card glass-panel">
+
+<img src="assets/images/placeholders/artist3.jpg">
+
+<h3>
+
+Buckshot Bourbon
+
+</h3>
+
+<p>
+
+Country Rock
+
+</p>
+
+</div>
+
+<div class="artist-card glass-panel">
+
+<img src="assets/images/placeholders/artist4.jpg">
+
+<h3>
+
+Moonflower Radio
+
+</h3>
+
+<p>
+
+Indie
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+/* =======================================
+ARTIST CAROUSEL
+======================================= */
+
+.artist-carousel{
+
+display:grid;
+
+grid-auto-flow:column;
+
+grid-auto-columns:290px;
+
+gap:28px;
+
+overflow-x:auto;
+
+padding-bottom:10px;
+
+scroll-snap-type:x mandatory;
+
+}
+
+.artist-carousel::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.artist-carousel .artist-card{
+
+padding:22px;
+
+scroll-snap-align:start;
+
+}
+
+.artist-carousel img{
+
+width:100%;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+}
+  
 Firewall Nation music video premieres Friday •
 
 </span>
