@@ -406,3 +406,36 @@ footer{
     flex-wrap:wrap;
 
 }
+#live-stats{
+
+    padding:8rem 0;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+}
+
+.stat-box{
+
+    padding:3rem;
+
+    text-align:center;
+
+}
+
+.stat-box h3{
+
+    font-size:3rem;
+
+    color:var(--cyan);
+
+    margin-bottom:15px;
+
+}
