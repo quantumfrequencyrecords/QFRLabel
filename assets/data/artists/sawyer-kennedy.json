@@ -1,6 +1,6 @@
 {
   "id": "sawyer-kennedy",
-  "name": "Sawyer kennedy",
+  "name": "Sawyer Kennedy",
   "slug": "sawyer-kennedy",
 
   "genre": [
@@ -14,9 +14,9 @@
 
   "tagline": "Music for minds that refuse to be programmed.",
 
-  "shortBio": "Sawyer kennedy creates cinematic industrial rock built around tension, rebellion, technology and the struggle to think independently.",
+  "shortBio": "Sawyer Kennedy creates cinematic industrial rock built around tension, rebellion, technology and the struggle to think independently.",
 
-  "biography": "Sawyer kennedy emerged from the collision of modern industrial rock, alternative songwriting and cinematic electronic production. Their music explores the invisible forces that shape modern life — media, technology, fear, influence and the human desire to remain free. Heavy guitars, atmospheric electronics and emotionally charged vocals create a sound that feels equally at home in a dark club, a stadium or the soundtrack to a dystopian future.",
+  "biography": "Sawyer Kennedy emerged from the collision of modern industrial rock, alternative songwriting and cinematic electronic production. Their music explores the invisible forces that shape modern life — media, technology, fear, influence and the human desire to remain free. Heavy guitars, atmospheric electronics and emotionally charged vocals create a sound that feels equally at home in a dark club, a stadium or the soundtrack to a dystopian future.",
 
   "quote": "The world is loud. We make music for the people trying to hear themselves think.",
 
@@ -36,13 +36,13 @@
 
   "members": [
     {
-      "id": "alex-voss",
-      "name": "Alex Voss",
-      "role": "Lead Vocals / Guitar",
-      "hometown": "Chicago, Illinois",
-      "image": "assets/images/artists/sawyer-kennedy/members/alex-voss.jpg",
+      "id": "sawyer-kennedy",
+      "name": "Sawyer Kennedy",
+      "role": "Solo Artist",
+      "hometown": "Oceanside, New York",
+      "image": "assets/images/artists/sawyer-kennedy/members/sawyer-kennedy-main.jpg",
       "shortBio": "Frontman and primary lyricist known for a powerful, cinematic vocal delivery.",
-      "biography": "Alex Voss developed a fascination with music through guitar, industrial production and alternative rock. His writing focuses on identity, technology, social pressure and the conflict between individuality and conformity."
+      "biography": "Sawyer Kennedy developed a fascination with music through guitar, industrial production and alternative rock. His writing focuses on identity, technology, social pressure and the conflict between individuality and conformity."
     },
 
     {
@@ -93,7 +93,7 @@
       "year": "2025",
       "type": "Album",
       "artwork": "assets/images/albums/signal-through-the-noise.jpg",
-      "description": "Sawyer kennedy's debut collection of industrial alternative rock.",
+      "description": "Sawyer Kennedy's debut collection of industrial alternative rock.",
       "songCount": 11
     }
   ],
