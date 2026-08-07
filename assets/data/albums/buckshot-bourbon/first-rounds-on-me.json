@@ -1,0 +1,32 @@
+{
+  "id": "first-rounds-on-me",
+
+  "title": "First Rounds On Me",
+
+  "artistId": "buckshot-bourbon",
+
+  "year": 2026,
+
+  "releaseDate": "2026-08-01",
+
+  "type": "Album",
+
+  "artwork": "assets/images/albums/in-the-crosshairs.jpg",
+
+  "description": "A Nashville Country rock album exploring drinking, fun and getting rowdy with friends.",
+
+  "genre": [
+    "Country Rock",
+    "Nashville Country"
+  ],
+
+  "tracks": [
+    "1. Backroad Rebels
+     2. Longneck Gospel
+     3. Island Time"
+  ],
+
+  "featured": true,
+
+  "status": "released"
+}
