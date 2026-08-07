@@ -1,0 +1,141 @@
+{
+  "id": "warpnotix",
+  "name": "Warpnotix",
+  "slug": "warpnotix",
+
+  "genre": [
+    "Industrial Rock",
+    "Alternative Rock"
+  ],
+
+  "hometown": "Chicago, Illinois",
+
+  "formed": "2025",
+
+  "tagline": "Music for minds that refuse to be programmed.",
+
+  "shortBio": "Warpnotix creates cinematic industrial rock built around tension, rebellion, technology and the struggle to think independently.",
+
+  "biography": "Warpnotix emerged from the collision of modern industrial rock, alternative songwriting and cinematic electronic production. Their music explores the invisible forces that shape modern life — media, technology, fear, influence and the human desire to remain free. Heavy guitars, atmospheric electronics and emotionally charged vocals create a sound that feels equally at home in a dark club, a stadium or the soundtrack to a dystopian future.",
+
+  "quote": "The world is loud. We make music for the people trying to hear themselves think.",
+
+  "logo": "assets/logos/artists/warpnotix.png",
+
+  "heroImage": "assets/images/artists/warpnotix/hero.jpg",
+
+  "profileImage": "assets/images/artists/warpnotix/profile.jpg",
+
+  "socials": {
+    "instagram": "#",
+    "facebook": "#",
+    "youtube": "#",
+    "spotify": "#",
+    "tiktok": "#"
+  },
+
+  "members": [
+    {
+      "id": "alex-voss",
+      "name": "Alex Voss",
+      "role": "Lead Vocals / Guitar",
+      "hometown": "Chicago, Illinois",
+      "image": "assets/images/artists/warpnotix/members/alex-voss.jpg",
+      "shortBio": "Frontman and primary lyricist known for a powerful, cinematic vocal delivery.",
+      "biography": "Alex Voss developed a fascination with music through guitar, industrial production and alternative rock. His writing focuses on identity, technology, social pressure and the conflict between individuality and conformity."
+    },
+
+    {
+      "id": "mason-reed",
+      "name": "Mason Reed",
+      "role": "Guitar / Production",
+      "hometown": "Detroit, Michigan",
+      "image": "assets/images/artists/warpnotix/members/mason-reed.jpg",
+      "shortBio": "Guitarist and producer responsible for much of the band's electronic texture.",
+      "biography": "Mason Reed combines traditional guitar production with electronic sound design, creating the dense atmospheric layers that define Warpnotix's recordings."
+    },
+
+    {
+      "id": "riley-cross",
+      "name": "Riley Cross",
+      "role": "Bass",
+      "hometown": "Milwaukee, Wisconsin",
+      "image": "assets/images/artists/warpnotix/members/riley-cross.jpg",
+      "shortBio": "Bass player responsible for the band's deep rhythmic foundation.",
+      "biography": "Riley Cross approaches bass as both a rhythmic and atmospheric instrument, combining aggressive low-end tones with melodic movement."
+    },
+
+    {
+      "id": "jordan-kane",
+      "name": "Jordan Kane",
+      "role": "Drums / Percussion",
+      "hometown": "Indianapolis, Indiana",
+      "image": "assets/images/artists/warpnotix/members/jordan-kane.jpg",
+      "shortBio": "Drummer combining live performance energy with precision electronic percussion.",
+      "biography": "Jordan Kane blends live drums with programmed percussion to create the explosive rhythmic foundation heard throughout Warpnotix's music."
+    }
+  ],
+
+  "albums": [
+    {
+      "id": "in-the-crosshairs",
+      "title": "In The Crosshairs",
+      "year": "2026",
+      "type": "Album",
+      "artwork": "assets/images/albums/in-the-crosshairs.jpg",
+      "description": "A cinematic industrial rock album exploring influence, surveillance, fear and independent thought.",
+      "songCount": 10
+    },
+
+    {
+      "id": "signal-through-the-noise",
+      "title": "Signal Through The Noise",
+      "year": "2025",
+      "type": "Album",
+      "artwork": "assets/images/albums/signal-through-the-noise.jpg",
+      "description": "Warpnotix's debut collection of industrial alternative rock.",
+      "songCount": 11
+    }
+  ],
+
+  "latestSong": {
+    "id": "signal-lost",
+    "title": "Signal Lost",
+    "artwork": "assets/images/songs/signal-lost.jpg"
+  },
+
+  "videos": [
+    {
+      "id": "signal-lost-video",
+      "title": "Signal Lost",
+      "youtubeId": "VIDEO_ID_HERE",
+      "thumbnail": "assets/images/videos/signal-lost.jpg",
+      "year": "2026"
+    }
+  ],
+
+  "gallery": {
+    "hero": [
+      "assets/images/artists/warpnotix/gallery/hero-01.jpg",
+      "assets/images/artists/warpnotix/gallery/hero-02.jpg"
+    ],
+
+    "live": [
+      "assets/images/artists/warpnotix/gallery/live-01.jpg",
+      "assets/images/artists/warpnotix/gallery/live-02.jpg"
+    ],
+
+    "members": [
+      "assets/images/artists/warpnotix/gallery/members-01.jpg"
+    ]
+  },
+
+  "news": [
+    {
+      "date": "2026-08-01",
+      "title": "Warpnotix Announces New Album",
+      "summary": "The band prepares to release their latest collection of industrial rock.",
+      "image": "assets/images/artists/warpnotix/news/news-01.jpg"
+    }
+  ]
+}
