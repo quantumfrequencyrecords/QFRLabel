@@ -1,0 +1,296 @@
+/* ==========================================================
+   QFR ARTISTS DIRECTORY
+========================================================== */
+
+.artists-hero{
+
+    padding:180px 0 110px;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(0,220,255,.12),
+            transparent 45%
+        );
+
+}
+
+.artists-hero h1{
+
+    font-size:clamp(4rem,8vw,8rem);
+
+    margin:20px 0;
+
+}
+
+.artists-hero p{
+
+    font-size:1.3rem;
+
+    color:var(--gray);
+
+}
+
+
+/* TICKER */
+
+.artist-symbol-ticker{
+
+    overflow:hidden;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    background:rgba(255,255,255,.015);
+
+}
+
+.artist-symbol-track{
+
+    display:flex;
+
+    width:max-content;
+
+    animation:
+        artistTicker 45s linear infinite;
+
+}
+
+.artist-symbol{
+
+    padding:22px 45px;
+
+    opacity:.45;
+
+    font-weight:800;
+
+    letter-spacing:4px;
+
+    white-space:nowrap;
+
+}
+
+@keyframes artistTicker{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+
+/* DIRECTORY */
+
+.artists-directory{
+
+    padding:120px 0;
+
+}
+
+.artists-intro{
+
+    margin-bottom:80px;
+
+}
+
+.artists-intro h2{
+
+    font-size:3rem;
+
+    margin:20px 0;
+
+}
+
+.artists-intro p{
+
+    color:var(--gray);
+
+    max-width:650px;
+
+    line-height:1.8;
+
+}
+
+
+/* ARTIST ROW */
+
+.artists-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+.artist-directory-card{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    min-height:480px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.025);
+
+    border:1px solid rgba(255,255,255,.07);
+
+}
+
+.artist-directory-card:nth-child(even)
+.artist-directory-image{
+
+    order:2;
+
+}
+
+.artist-directory-image{
+
+    min-height:480px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.artist-directory-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .8s ease;
+
+}
+
+.artist-directory-card:hover
+.artist-directory-image img{
+
+    transform:scale(1.06);
+
+}
+
+.artist-directory-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(0,0,0,.65)
+        );
+
+}
+
+.artist-directory-info{
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.artist-directory-info h2{
+
+    font-size:clamp(2.5rem,5vw,5rem);
+
+    line-height:1;
+
+    margin:20px 0;
+
+}
+
+.artist-directory-info p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+.artist-meta{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:15px 0;
+
+}
+
+.artist-meta span{
+
+    padding:8px 13px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--gray);
+
+    font-size:.8rem;
+
+}
+
+.artist-directory-buttons{
+
+    margin-top:30px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .artist-directory-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artist-directory-card:nth-child(even)
+    .artist-directory-image{
+
+        order:0;
+
+    }
+
+    .artist-directory-image{
+
+        min-height:350px;
+
+    }
+
+    .artist-directory-info{
+
+        padding:40px 30px;
+
+    }
+
+}
