@@ -738,3 +738,69 @@
     }
 
 }
+/* ==========================================================
+   SONG MODAL
+========================================================== */
+
+.song-modal{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:35px;
+
+}
+
+.song-modal-art img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.song-modal-content{
+
+    min-width:0;
+
+}
+
+.song-lyrics{
+
+    margin-top:25px;
+
+}
+
+.song-lyrics pre{
+
+    white-space:pre-wrap;
+
+    font-family:inherit;
+
+    line-height:1.8;
+
+    max-height:350px;
+
+    overflow-y:auto;
+
+    color:var(--gray);
+
+}
+
+.song-streaming{
+
+    margin-top:25px;
+
+}
+
+
+@media(max-width:700px){
+
+    .song-modal{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
