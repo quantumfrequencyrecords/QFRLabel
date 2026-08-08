@@ -3,46 +3,37 @@
 
 <head>
 
-    <!-- =======================================================
-         Quantum Frequency Records
-         Landing Page
-         Version 1.0
-    ======================================================== -->
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Quantum Frequency Records
-    </title>
-
-    <meta name="description"
-          content="Discover, Harness, Nurture and Succeed. Explore the artists and music of Quantum Frequency Records.">
-
     <meta name="theme-color"
-          content="#060708">
+          content="#020207">
 
-    <meta property="og:title"
-          content="Quantum Frequency Records">
+    <title>Quantum Frequency Records</title>
 
-    <meta property="og:description"
-          content="Unleash Music's Raw Vibrational Energy">
+    <meta
+        name="description"
+        content="Quantum Frequency Records — Unleash Music's Raw Vibrational Energy."
+    >
 
-    <meta property="og:type"
-          content="website">
+    <meta
+        property="og:title"
+        content="Quantum Frequency Records"
+    >
 
-    <meta property="og:image"
-          content="assets/images/social-preview.jpg">
+    <meta
+        property="og:description"
+        content="Unleash Music's Raw Vibrational Energy"
+    >
 
-    <meta property="og:url"
-          content="https://YOURDOMAIN.com">
+    <meta
+        property="og:type"
+        content="website"
+    >
 
-    <!-- =======================
-         Google Fonts
-    ======================== -->
+    <!-- Google Fonts -->
 
     <link rel="preconnect"
           href="https://fonts.googleapis.com">
@@ -51,181 +42,189 @@
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-    <!-- =======================
-         Font Awesome
-    ======================== -->
+    <!-- Font Awesome -->
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
 
-    <!-- =======================
-         Stylesheets
-    ======================== -->
+    <!-- Global stylesheet -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
 
-    <!-- ==============================================
-            CUSTOM BLENDED BACKGROUND OVERRIDES
-    =============================================== -->
-    <style>
-        /* Ensures the background element stays fixed over the whole screen viewport */
-        body {
-            position: relative;
-        }
+    <!-- Landing-page-only stylesheet -->
 
-        /* 1. Moves the logo section to acts as a full screen background layout layer */
-        #logo-section {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            
-            /* Layering structure: Behind text main content (#landing-page should have z-index: 2 or greater) */
-            z-index: 1; 
-            pointer-events: none; /* Stops the image from blocking text selections or button clicks */
-        }
+    <link
+        rel="stylesheet"
+        href="assets/css/landing.css"
+    >
 
-        /* 2. Absolute centers the logo and applies the blending magic */
-        #qfr-logo {
-            position: absolute;
-            top: 50%;
-            left: 60%;
-            transform: translate(-50%, -50%);
-            width: 60vw;           /* Adjust width to make logo smaller or larger on screen */
-            max-width: 600px;      /* Maximum scaling bounds on desktop screens */
-            height: auto;
-            
-            /* Blending & Opacity adjustments */
-            opacity: 0.12;          /* Keeps logo subtle so the typography is completely readable */
-            
-            /* BLEND MODES FOR DARK GRADIENTS:
-               - use 'screen' if the logo artwork is pure white lines.
-               - use 'overlay' or 'color-dodge' for a vibrant glow vibe. */
-            mix-blend-mode: screen; 
-        }
-
-        /* 3. Ensures the main typography wrapper is positioned directly on top of the logo */
-        #landing-page {
-            position: relative;
-            z-index: 10;           /* Safely forces text stack layers above the logo */
-        }
-    </style>
 </head>
 
-<body>
 
-    <!-- ==============================================
-            BACKGROUND LAYERS
-    =============================================== -->
+<body class="qfr-landing">
 
-    <div id="background-gradient"></div>
 
-    <div id="particles-js"></div>
+    <!-- =====================================================
+         BACKGROUND SYSTEM
+    ====================================================== -->
 
-    <div id="background-noise"></div>
+    <div
+        id="background-gradient"
+        aria-hidden="true">
+    </div>
 
-    <div id="ambient-glow"></div>
 
-    <!-- ======================================
-            BLENDED LOGO BACKGROUND LAYER
-    ======================================= -->
+    <div
+        id="particles-js"
+        aria-hidden="true">
+    </div>
 
-    <section id="logo-section">
+
+    <div
+        id="ambient-glow"
+        aria-hidden="true">
+    </div>
+
+
+    <div
+        id="background-noise"
+        aria-hidden="true">
+    </div>
+
+
+    <!-- =====================================================
+         QFR LOGO BACKGROUND
+    ====================================================== -->
+
+    <section
+        id="logo-section"
+        aria-hidden="true">
 
         <img
-
-            src="assets/logos/qfr-logo.png"
-
-            alt="Quantum Frequency Records Logo"
-
             id="qfr-logo"
-
+            src="assets/logos/qfr-logo.png"
+            alt=""
         >
 
     </section>
 
-    <!-- ==============================================
-            PAGE WRAPPER
-    =============================================== -->
+
+    <!-- =====================================================
+         MAIN LANDING PAGE
+    ====================================================== -->
 
     <main id="landing-page">
-
-        <!-- ======================================
-                HERO SECTION
-        ======================================= -->
 
         <section id="hero">
 
             <div class="hero-content">
 
-                <!-- -----------------------------
-                        HEADLINE
-                ------------------------------ -->
+
+                <!-- =================================================
+                     MAIN HEADLINE
+                ================================================== -->
 
                 <h1>
 
-                    Unleash Music's<br>
+                    Unleash Music's
+
+                    <br>
 
                     <span>
-
                         Raw Vibrational Energy
-
                     </span>
 
                 </h1>
 
-                <!-- -----------------------------
-                        SUBTITLE
-                ------------------------------ -->
 
-                <div id="animated-subtitle">
+                <!-- =================================================
+                     ANIMATED SUBTITLE
 
-                    <span>Discover</span>
+                     Only the four words are animated.
+                     Separators remain stationary.
+                ================================================== -->
 
-                    <span>•</span>
+                <div
+                    id="animated-subtitle"
+                    aria-label="Discover, Harness, Nurture, Succeed">
 
-                    <span>Harness</span>
+                    <span class="subtitle-word">
+                        Discover
+                    </span>
 
-                    <span>•</span>
+                    <span
+                        class="subtitle-separator"
+                        aria-hidden="true">
+                        •
+                    </span>
 
-                    <span>Nurture</span>
+                    <span class="subtitle-word">
+                        Harness
+                    </span>
 
-                    <span>•</span>
+                    <span
+                        class="subtitle-separator"
+                        aria-hidden="true">
+                        •
+                    </span>
 
-                    <span>Succeed</span>
+                    <span class="subtitle-word">
+                        Nurture
+                    </span>
+
+                    <span
+                        class="subtitle-separator"
+                        aria-hidden="true">
+                        •
+                    </span>
+
+                    <span class="subtitle-word">
+                        Succeed
+                    </span>
 
                 </div>
 
-                <!-- -----------------------------
-                        BUTTON
-                ------------------------------ -->
 
-                <a href="home.html"
-                   id="explore-button">
+                <!-- =================================================
+                     ENTER BUTTON
+                ================================================== -->
 
-                    Enter the Experience
+                <a
+                    id="explore-button"
+                    href="home.html">
+
+                    <span>
+                        Enter the Experience
+                    </span>
 
                 </a>
+
 
             </div>
 
         </section>
 
-        <!-- ======================================
-                SCROLL INDICATOR
-        ======================================= -->
 
-        <div id="scroll-indicator">
+        <!-- =====================================================
+             SCROLL INDICATOR
+        ====================================================== -->
+
+        <div
+            id="scroll-indicator"
+            aria-hidden="true">
 
             <span>
-
                 Scroll
-
             </span>
 
             <i class="fa-solid fa-chevron-down"></i>
@@ -233,11 +232,15 @@
         </div>
 
     </main>
-    <!-- ==============================================
-            PAGE LOADER
-    =============================================== -->
 
-    <div id="page-loader" aria-hidden="true">
+
+    <!-- =====================================================
+         LOADING SCREEN
+    ====================================================== -->
+
+    <div
+        id="page-loader"
+        aria-hidden="true">
 
         <div class="loader-container">
 
@@ -246,62 +249,39 @@
             <div class="loader-core"></div>
 
             <div class="loader-text">
-
                 Quantum Frequency Records
-
             </div>
 
         </div>
 
     </div>
 
-    <!-- ==============================================
-            AUDIO PLACEHOLDER
-            (Persistent Player Added Later)
-    =============================================== -->
 
-    <audio
-        id="background-audio"
-        preload="none">
-    </audio>
-
-    <!-- ==============================================
-            ACCESSIBILITY
-    =============================================== -->
+    <!-- =====================================================
+         ACCESSIBILITY
+    ====================================================== -->
 
     <a
         class="skip-link"
         href="#hero">
 
-        Skip to Main Content
+        Skip to main content
 
     </a>
 
-    <!-- ==============================================
-            JAVASCRIPT LIBRARIES
-    =============================================== -->
 
-    <!-- GSAP -->
-
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js">
-    </script>
-
-    <!-- Scroll Trigger -->
-
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js">
-    </script>
-
-    <!-- tsParticles -->
+    <!-- =====================================================
+         JAVASCRIPT LIBRARIES
+    ====================================================== -->
 
     <script
         src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js">
     </script>
 
-    <!-- ==============================================
-            WEBSITE JAVASCRIPT
-    =============================================== -->
+
+    <!-- =====================================================
+         QFR JAVASCRIPT
+    ====================================================== -->
 
     <script src="assets/js/main.js"></script>
 
@@ -309,15 +289,6 @@
 
     <script src="assets/js/loader.js"></script>
 
-    <script>
-
-        window.addEventListener("load", () => {
-
-            document.body.classList.add("loaded");
-
-        });
-
-    </script>
 
 </body>
 
