@@ -1,31 +1,57 @@
-document.addEventListener("DOMContentLoaded",()=>{
+/* ============================================================
+   QFR LANDING PAGE
+   Subtitle animation + page initialization
+============================================================ */
 
-const words=document.querySelectorAll("#animated-subtitle span");
+document.addEventListener("DOMContentLoaded", () => {
 
-let index=0;
+    const words = document.querySelectorAll(
+        "#animated-subtitle .subtitle-word"
+    );
 
-function animateWords(){
+    if (!words.length) {
+        return;
+    }
 
-words.forEach(word=>word.classList.remove("active"));
+    let currentIndex = 0;
 
-if(words[index]){
+    function activateWord(index) {
 
-words[index].classList.add("active");
+        words.forEach((word) => {
 
-}
+            word.classList.remove("active");
 
-index++;
+        });
 
-if(index>=words.length){
+        words[index].classList.add("active");
 
-index=0;
+    }
 
-}
+    function cycleWords() {
 
-}
+        activateWord(currentIndex);
 
-animateWords();
+        currentIndex++;
 
-setInterval(animateWords,2000);
+        if (currentIndex >= words.length) {
+
+            currentIndex = 0;
+
+        }
+
+    }
+
+    /*
+        Start immediately.
+        Each word remains highlighted
+        for approximately 2 seconds.
+    */
+
+    cycleWords();
+
+    window.setInterval(
+        cycleWords,
+        2000
+    );
 
 });
