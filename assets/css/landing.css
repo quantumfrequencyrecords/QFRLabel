@@ -604,14 +604,13 @@ body.qfr-landing::before {
 
 #explore-button {
 
-    position: relative;
+        position: absolute;
 
-    margin-top:
-        clamp(
-            44px,
-            7vh,
-            72px
-        );
+    top: 66.66vh;
+
+    left: 50%;
+
+    transform: translateX(-50%);
 
     min-width: 174px;
 
