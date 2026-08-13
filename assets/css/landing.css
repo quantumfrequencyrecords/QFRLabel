@@ -296,7 +296,7 @@ body.qfr-landing::before {
 
     transform: none !important;
 
-    opacity: .15 !important;
+    opacity: .105 !important;
 
     mix-blend-mode: screen !important;
 
@@ -555,40 +555,45 @@ body.qfr-landing::before {
 
 #animated-subtitle .subtitle-word {
 
-    opacity: .45;
-
-    color: rgba(255,255,255,.55);
-
-    text-shadow: none;
-
-    transform: translateY(0) scale(1);
+    opacity: .48;
 
     transition:
 
-        opacity .8s ease,
-        color .8s ease,
-        text-shadow .8s ease,
-        transform .8s ease;
+        color .7s ease,
+        opacity .7s ease,
+        text-shadow .7s ease,
+        transform .7s ease;
 
 }
 
 
-#animated-subtitle .subtitle-word.active {
-
-    opacity: 1;
+#animated-subtitle
+.subtitle-word.active {
 
     color: #ffffff;
 
+    opacity: 1;
+
     transform:
         translateY(-1px)
-        scale(1.03);
+        scale(1.025);
 
-    animation: wordGlow 1.6s ease-in-out infinite;
+    text-shadow:
+
+        0 0 8px
+        rgba(255,255,255,.75),
+
+        0 0 24px
+        rgba(153,89,255,.85),
+
+        0 0 44px
+        rgba(63,202,255,.34);
 
 }
 
 
-#animated-subtitle .subtitle-separator {
+#animated-subtitle
+.subtitle-separator {
 
     color:
         rgba(151,107,255,.65);
@@ -604,13 +609,14 @@ body.qfr-landing::before {
 
 #explore-button {
 
-        position: absolute;
+    position: relative;
 
-    top: 60vh;
-
-    left: 50%;
-
-    transform: translateX(-50%);
+    margin-top:
+        clamp(
+            44px,
+            7vh,
+            72px
+        );
 
     min-width: 174px;
 
@@ -1088,34 +1094,6 @@ body.loaded #page-loader {
 }
 
 
-/* Continuous glow pulse for the active subtitle word */
-@keyframes wordGlow {
-
-    0%,
-    100% {
-
-        text-shadow:
-            0 0 6px  rgba(255,255,255,.9),
-            0 0 14px rgba(200,160,255,.8),
-            0 0 28px rgba(153,89,255,.7),
-            0 0 48px rgba(63,202,255,.35);
-
-    }
-
-    50% {
-
-        text-shadow:
-            0 0 10px rgba(255,255,255,1),
-            0 0 22px rgba(220,180,255,1),
-            0 0 40px rgba(153,89,255,.95),
-            0 0 70px rgba(63,202,255,.55),
-            0 0 90px rgba(120,60,255,.3);
-
-    }
-
-}
-
-
 /* ============================================================
    MOBILE
 ============================================================ */
@@ -1201,8 +1179,7 @@ body.loaded #page-loader {
     #qfr-logo,
     #scroll-indicator,
     .loader-ring,
-    .loader-core,
-    #animated-subtitle .subtitle-word.active {
+    .loader-core {
 
         animation: none !important;
 
