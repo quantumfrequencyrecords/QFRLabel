@@ -11,23 +11,23 @@
     >
 
     <meta
+        name="theme-color"
+        content="#030308"
+    >
+
+    <meta
         name="description"
         content="Quantum Frequency Records — Discover independent music, artists and sounds from across the frequency."
     >
 
-    <title>
-        Quantum Frequency Records | Home
-    </title>
+    <title>Quantum Frequency Records | Home</title>
 
 
-    <!-- ==================================================
-         GOOGLE FONT
-    ================================================== -->
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
         rel="preconnect"
@@ -41,9 +41,9 @@
     >
 
 
-    <!-- ==================================================
-         FONT AWESOME
-    ================================================== -->
+    <!-- =====================================================
+         ICONS
+    ====================================================== -->
 
     <link
         rel="stylesheet"
@@ -51,235 +51,310 @@
     >
 
 
-    <!-- ==================================================
-         QFR STYLES
-    ================================================== -->
+    <!-- =====================================================
+         GLOBAL CSS
+    ====================================================== -->
 
     <link
         rel="stylesheet"
         href="assets/css/style.css"
     >
 
+
+    <!-- =====================================================
+         HOMEPAGE CSS
+         IMPORTANT:
+         This comes AFTER style.css intentionally.
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/home.css"
+    >
+
 </head>
 
 
-<body>
+<body class="qfr-home">
 
 
-<!-- ==================================================
-     BACKGROUND SYSTEM
-================================================== -->
+<!-- =========================================================
+     ATMOSPHERE
+========================================================= -->
 
-<div id="background-gradient"></div>
+<div
+    class="home-background"
+    aria-hidden="true"
+>
 
-<div id="particles-js"></div>
+    <div class="home-orb home-orb-one"></div>
 
-<div id="ambient-glow"></div>
+    <div class="home-orb home-orb-two"></div>
 
+    <div class="home-orb home-orb-three"></div>
 
-<!-- ==================================================
-     HEADER / NAVIGATION
-================================================== -->
-
-<header id="main-header">
-
-    <div class="container">
-
-        <nav>
+</div>
 
 
-            <!-- LOGO -->
+<div
+    id="home-particles"
+    aria-hidden="true"
+></div>
+
+
+<div
+    class="home-noise"
+    aria-hidden="true"
+></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="qfr-header">
+
+    <div class="qfr-header-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="home.html"
+            class="qfr-logo"
+            aria-label="Quantum Frequency Records Home"
+        >
+
+            <img
+                src="assets/logos/qfr-logo.png"
+                alt="Quantum Frequency Records"
+            >
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="qfr-navigation"
+            aria-label="Main navigation"
+        >
 
             <a
-                class="logo"
                 href="home.html"
+                class="active"
             >
-
-                <img
-                    src="assets/logos/qfr-logo.png"
-                    alt="Quantum Frequency Records"
-                >
-
+                Home
             </a>
 
+            <a href="news.html">
+                News
+            </a>
 
-            <!-- MOBILE MENU BUTTON -->
+            <a href="artists.html">
+                Artists
+            </a>
 
-            <button
-                id="mobile-menu-button"
-                aria-label="Open navigation"
-            >
+            <a href="music.html">
+                Music
+            </a>
 
-                <i class="fa-solid fa-bars"></i>
+            <a href="videos.html">
+                Videos
+            </a>
 
-            </button>
+            <a href="gallery.html">
+                Gallery
+            </a>
 
+            <a href="about.html">
+                About Us
+            </a>
 
-            <!-- MAIN NAVIGATION -->
-
-            <ul class="navigation">
-
-                <li>
-                    <a
-                        href="home.html"
-                        class="active"
-                    >
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="news.html">
-                        News
-                    </a>
-                </li>
-
-                <li>
-                    <a href="artists.html">
-                        Artists
-                    </a>
-                </li>
-
-                <li>
-                    <a href="music.html">
-                        Music
-                    </a>
-                </li>
-
-                <li>
-                    <a href="videos.html">
-                        Videos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="gallery.html">
-                        Gallery
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact Us
-                    </a>
-                </li>
-
-            </ul>
-
-
-            <!-- STORE -->
-
-            <div class="store-link">
-
-                <a href="store.html">
-
-                    <i class="fa-solid fa-bag-shopping"></i>
-
-                    Store
-
-                </a>
-
-            </div>
+            <a href="contact.html">
+                Contact Us
+            </a>
 
         </nav>
+
+
+        <!-- STORE -->
+
+        <a
+            href="store.html"
+            class="qfr-store"
+        >
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span>
+                Store
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button
+            type="button"
+            class="qfr-menu-button"
+            id="qfr-menu-button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="qfr-mobile-menu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <div
+        class="qfr-mobile-menu"
+        id="qfr-mobile-menu"
+    >
+
+        <a href="home.html">
+            Home
+        </a>
+
+        <a href="news.html">
+            News
+        </a>
+
+        <a href="artists.html">
+            Artists
+        </a>
+
+        <a href="music.html">
+            Music
+        </a>
+
+        <a href="videos.html">
+            Videos
+        </a>
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+        <a
+            href="store.html"
+            class="mobile-store"
+        >
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            Store
+
+        </a>
 
     </div>
 
 </header>
 
 
-
-<!-- ==================================================
-     MAIN CONTENT
-================================================== -->
+<!-- =========================================================
+     MAIN
+========================================================= -->
 
 <main>
 
 
-
-<!-- ==================================================
+<!-- =========================================================
      HERO
-================================================== -->
+========================================================= -->
 
-<section id="homepage-hero">
+<section class="home-hero">
 
-    <div class="hero-overlay"></div>
+    <div class="home-hero-grid"></div>
 
-    <div class="container">
-
-        <div class="homepage-hero-content">
+    <div class="home-hero-content">
 
 
-            <span class="pill">
+        <div class="home-eyebrow">
 
-                QUANTUM FREQUENCY RECORDS
+            <span></span>
 
-            </span>
+            QUANTUM FREQUENCY RECORDS
+
+            <span></span>
+
+        </div>
 
 
-            <h1>
+        <h1>
 
-                Discover The Future
+            Discover The Future
+
+            <strong>
                 Of Independent Music
+            </strong>
 
-            </h1>
-
-
-            <p>
-
-                A new frequency of sound.
-
-                Discover groundbreaking artists spanning
-                rock, country, alternative, industrial,
-                electronic, pop, indie and beyond.
-
-            </p>
+        </h1>
 
 
-            <div class="hero-buttons">
+        <p>
+
+            A new frequency of sound.
+
+            Discover artists creating music
+            without boundaries.
+
+        </p>
 
 
-                <a
-                    href="artists.html"
-                    class="button"
-                >
+        <div class="hero-actions">
 
-                    Explore Artists
+            <a
+                href="artists.html"
+                class="qfr-button qfr-button-primary"
+            >
 
-                </a>
+                Explore Artists
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
 
 
-                <a
-                    href="music.html"
-                    class="button-secondary"
-                >
+            <a
+                href="music.html"
+                class="qfr-button qfr-button-outline"
+            >
 
-                    <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play"></i>
 
-                    Listen Now
+                Listen Now
 
-                </a>
-
-            </div>
-
+            </a>
 
         </div>
 
     </div>
 
 
-    <!-- SCROLL INDICATOR -->
+    <!-- HERO SCROLL -->
 
-    <div class="scroll-indicator">
+    <div class="home-scroll">
 
         <span>
-            Scroll
+            SCROLL TO EXPLORE
         </span>
 
         <i class="fa-solid fa-chevron-down"></i>
@@ -289,95 +364,123 @@
 </section>
 
 
+<!-- =========================================================
+     WAVEFORM DIVIDER
+========================================================= -->
 
-<!-- ==================================================
-     FEATURED RELEASE
-================================================== -->
-
-<section
-    id="featured-release"
-    class="py-xl"
+<div
+    class="qfr-wave"
+    aria-hidden="true"
 >
 
-    <div class="container">
+    <div class="wave-line"></div>
+
+    <div class="wave-line wave-line-two"></div>
+
+</div>
 
 
-        <div class="section-title">
+<!-- =========================================================
+     FEATURED RELEASE
+========================================================= -->
 
-            <span class="pill">
+<section class="home-section featured-section">
 
+    <div class="home-container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
                 FEATURED
-
             </span>
 
             <h2>
-
                 The Frequency Is Alive
-
             </h2>
+
+            <p>
+                Step inside the latest sound emerging
+                from Quantum Frequency Records.
+            </p>
 
         </div>
 
 
-        <div class="featured-release glass-panel">
+        <div class="featured-layout">
 
 
-            <!-- ALBUM ART -->
+            <!-- ART -->
 
-            <div class="featured-cover">
+            <div class="featured-art">
 
-                <img
-                    src="assets/images/home/featured-album.jpg"
-                    alt="Featured Album"
-                >
+                <div class="featured-art-glow"></div>
+
+                <div class="featured-art-inner">
+
+                    <div class="featured-symbol">
+
+                        <span>Q</span>
+
+                    </div>
+
+                    <div class="featured-art-title">
+
+                        IN THE
+
+                        <strong>
+                            CROSSHAIRS
+                        </strong>
+
+                    </div>
+
+                    <div class="featured-art-artist">
+                        FIREWALL NATION
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <!-- INFORMATION -->
+            <!-- INFO -->
 
-            <div class="featured-info">
+            <div class="featured-copy">
 
-
-                <span class="badge">
-
+                <span class="release-badge">
                     NEW RELEASE
-
                 </span>
 
-
-                <h2 data-album-title>
-
-                    The Signals We Leave Behind
-
-                </h2>
-
-
-                <h3 data-artist-name>
-
-                    Immovable Giants
-
+                <h3>
+                    In The Crosshairs
                 </h3>
 
+                <h4>
+                    Firewall Nation
+                </h4>
 
                 <p>
 
-                    Folk/Indie/Pop/Alternative Rock fused together meets
-                    cinematic production. The result....songs you will want 
-                    to listen to on repeat.
+                    A collision of industrial rock,
+                    electronic tension and raw
+                    alternative energy.
 
-                    Experience the newest flagship release
-                    from Quantum Frequency Records.
+                </p>
+
+                <p class="featured-small">
+
+                    The latest release from one of
+                    the label's most uncompromising
+                    frequencies.
 
                 </p>
 
 
-                <div class="featured-buttons">
-
+                <div class="card-actions">
 
                     <a
                         href="music.html"
-                        class="button"
+                        class="qfr-button qfr-button-primary"
                     >
 
                         <i class="fa-solid fa-play"></i>
@@ -386,16 +489,16 @@
 
                     </a>
 
-
                     <a
-                        href="music.html"
-                        class="button-secondary"
+                        href="artist.html?id=firewall-nation"
+                        class="qfr-text-link"
                     >
 
-                        View Album
+                        Explore Artist
+
+                        <i class="fa-solid fa-arrow-right"></i>
 
                     </a>
-
 
                 </div>
 
@@ -408,93 +511,101 @@
 </section>
 
 
+<!-- =========================================================
+     NEWS TICKER
+========================================================= -->
 
-<!-- ==================================================
-     LIVE NEWS TICKER
-================================================== -->
+<section class="qfr-ticker">
 
-<section id="news-ticker">
+    <div class="ticker-label">
 
-    <div class="ticker-track">
+        <span class="ticker-dot"></span>
 
+        QFR NEWS
 
-        <span>
-
-            LATEST NEWS
-
-        </span>
+    </div>
 
 
-        <span>
+    <div class="ticker-window">
 
-            Buckshot Bourbon announces upcoming album •
+        <div class="ticker-track">
 
-        </span>
+            <span>
+                Buckshot Bourbon announces new release
+            </span>
 
+            <b>•</b>
 
-        <span>
+            <span>
+                Moonflower Radio releases new single
+            </span>
 
-            Moonflower Radio releases new single •
+            <b>•</b>
 
-        </span>
+            <span>
+                Firewall Nation video premieres this week
+            </span>
 
+            <b>•</b>
 
-        <span>
+            <span>
+                Fractal Hearts enters the QFR trending chart
+            </span>
 
-            Firewall Nation music video premieres Friday •
+            <b>•</b>
 
-        </span>
+            <span>
+                Discover new music from Quantum Frequency Records
+            </span>
 
+            <b>•</b>
 
-        <span>
-
-            Fractal Hearts reaches 1 million streams •
-
-        </span>
-
-
-        <span>
-
-            Quantum Frequency Records welcomes new music •
-
-        </span>
-
+        </div>
 
     </div>
 
 </section>
 
 
-
-<!-- ==================================================
+<!-- =========================================================
      LATEST
-================================================== -->
+========================================================= -->
 
-<section id="latest">
+<section class="home-section latest-section">
 
-    <div class="container">
+    <div class="home-container">
 
 
-        <div class="section-title">
+        <div class="section-heading split-heading">
 
-            <span class="pill">
+            <div>
 
-                LATEST
+                <span class="section-label">
+                    LATEST
+                </span>
 
-            </span>
+                <h2>
+                    What's New
+                </h2>
 
-            <h2>
+                <p>
+                    The newest artists, albums and songs
+                    entering the frequency.
+                </p>
 
-                What's New
+            </div>
 
-            </h2>
 
-            <p>
+            <a
+                href="news.html"
+                class="qfr-button qfr-button-outline"
+            >
 
-                The newest releases, artists and stories
-                from Quantum Frequency Records.
+                View All News
 
-            </p>
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
 
         </div>
 
@@ -504,122 +615,157 @@
 
             <!-- NEW ARTIST -->
 
-            <article class="glass-panel latest-card">
+            <article class="latest-card">
 
-                <span class="badge">
+                <div class="card-visual artist-visual">
 
-                    NEW ARTIST
+                    <div class="visual-orbit"></div>
 
-                </span>
+                    <div class="visual-initial">
+                        F
+                    </div>
 
-                <img
-                    src="assets/images/placeholders/artist1.jpg"
-                    alt="Newest Artist"
-                >
+                    <span class="visual-tag">
+                        ARTIST
+                    </span>
 
-                <h3>
+                </div>
 
-                    Firewall Nation
 
-                </h3>
+                <div class="latest-card-body">
 
-                <p>
+                    <span>
+                        NEW ARTIST
+                    </span>
 
-                    Industrial Rock
+                    <h3>
+                        Firewall Nation
+                    </h3>
 
-                </p>
+                    <p>
+                        Industrial Rock
+                    </p>
 
-                <a
-                    href="artist.html"
-                    class="text-cyan"
-                >
+                    <a
+                        href="artist.html?id=firewall-nation"
+                        class="qfr-text-link"
+                    >
 
-                    Meet The Artist →
+                        Meet The Artist
 
-                </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
 
             </article>
-
 
 
             <!-- NEW ALBUM -->
 
-            <article class="glass-panel latest-card">
+            <article class="latest-card">
 
-                <span class="badge">
+                <div class="card-visual album-visual">
 
-                    NEW ALBUM
+                    <div class="album-ring"></div>
 
-                </span>
+                    <div class="album-name">
+                        CROSS<br>HAIRS
+                    </div>
 
-                <img
-                    src="assets/images/placeholders/featured-album.jpg"
-                    alt="Newest Album"
-                >
+                    <span class="visual-tag">
+                        ALBUM
+                    </span>
 
-                <h3>
+                </div>
 
-                    In The Crosshairs
 
-                </h3>
+                <div class="latest-card-body">
 
-                <p>
+                    <span>
+                        NEW ALBUM
+                    </span>
 
-                    Firewall Nation
+                    <h3>
+                        In The Crosshairs
+                    </h3>
 
-                </p>
+                    <p>
+                        Firewall Nation
+                    </p>
 
-                <a
-                    href="music.html"
-                    class="text-cyan"
-                >
+                    <a
+                        href="music.html"
+                        class="qfr-text-link"
+                    >
 
-                    Explore Album →
+                        Explore Album
 
-                </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
 
             </article>
-
 
 
             <!-- NEW SINGLE -->
 
-            <article class="glass-panel latest-card">
+            <article class="latest-card">
 
-                <span class="badge">
+                <div class="card-visual single-visual">
 
-                    NEW SINGLE
+                    <div class="single-wave">
 
-                </span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
 
-                <img
-                    src="assets/images/placeholders/latest-song.jpg"
-                    alt="Newest Single"
-                >
+                    </div>
 
-                <h3>
+                    <span class="visual-tag">
+                        SINGLE
+                    </span>
 
-                    Signal Lost
+                </div>
 
-                </h3>
 
-                <p>
+                <div class="latest-card-body">
 
-                    Firewall Nation
+                    <span>
+                        NEW SINGLE
+                    </span>
 
-                </p>
+                    <h3>
+                        Signal Lost
+                    </h3>
 
-                <a
-                    href="music.html"
-                    class="text-cyan"
-                >
+                    <p>
+                        Firewall Nation
+                    </p>
 
-                    Listen Now →
+                    <a
+                        href="music.html"
+                        class="qfr-text-link"
+                    >
 
-                </a>
+                        Listen Now
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
 
             </article>
-
 
         </div>
 
@@ -628,37 +774,30 @@
 </section>
 
 
+<!-- =========================================================
+     ARTISTS
+========================================================= -->
 
-<!-- ==================================================
-     FEATURED ARTISTS
-================================================== -->
+<section class="home-section artists-section">
 
-<section id="featured-artists">
-
-    <div class="container">
+    <div class="home-container">
 
 
-        <div class="section-header">
+        <div class="section-heading split-heading">
 
-            <div class="section-heading">
+            <div>
 
-                <span class="pill">
-
-                    ARTISTS
-
+                <span class="section-label">
+                    THE ROSTER
                 </span>
 
                 <h2>
-
                     Voices Of The Frequency
-
                 </h2>
 
                 <p>
-
-                    Discover the artists defining
-                    Quantum Frequency Records.
-
+                    Twelve unique frequencies.
+                    One independent label.
                 </p>
 
             </div>
@@ -666,185 +805,211 @@
 
             <a
                 href="artists.html"
-                class="button-secondary"
+                class="qfr-button qfr-button-outline"
             >
 
                 View All Artists
+
+                <i class="fa-solid fa-arrow-right"></i>
 
             </a>
 
         </div>
 
 
+        <div class="artist-grid">
 
-        <div class="artist-carousel">
 
+            <!-- FIREWALL -->
 
-            <!-- ARTIST 1 -->
+            <a
+                href="artist.html?id=firewall-nation"
+                class="artist-tile"
+            >
 
-            <article class="artist-card glass-panel">
+                <div class="artist-tile-art firewall">
 
-                <div class="artist-photo">
-
-                    <img
-                        src="assets/images/placeholders/artist1.jpg"
-                        alt="Firewall Nation"
-                    >
+                    <span>
+                        F
+                    </span>
 
                 </div>
 
-                <div class="card-body">
+                <div class="artist-tile-info">
 
-                    <span class="pill">
-
-                        INDUSTRIAL ROCK
-
-                    </span>
+                    <small>
+                        INDUSTRIAL / ROCK
+                    </small>
 
                     <h3>
-
                         Firewall Nation
-
                     </h3>
 
-                    <a
-                        href="artist.html"
-                        class="text-cyan"
-                    >
-
-                        Explore →
-
-                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </div>
 
-            </article>
+            </a>
 
 
+            <!-- FRACTAL -->
 
-            <!-- ARTIST 2 -->
+            <a
+                href="artist.html?id=fractal-hearts"
+                class="artist-tile"
+            >
 
-            <article class="artist-card glass-panel">
+                <div class="artist-tile-art fractal">
 
-                <div class="artist-photo">
-
-                    <img
-                        src="assets/images/placeholders/artist2.jpg"
-                        alt="Fractal Hearts"
-                    >
+                    <span>
+                        FH
+                    </span>
 
                 </div>
 
-                <div class="card-body">
+                <div class="artist-tile-info">
 
-                    <span class="pill">
-
+                    <small>
                         ALTERNATIVE
-
-                    </span>
+                    </small>
 
                     <h3>
-
                         Fractal Hearts
-
                     </h3>
 
-                    <a
-                        href="artist.html"
-                        class="text-cyan"
-                    >
-
-                        Explore →
-
-                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </div>
 
-            </article>
+            </a>
 
 
+            <!-- BUCKSHOT -->
 
-            <!-- ARTIST 3 -->
+            <a
+                href="artist.html?id=buckshot-bourbon"
+                class="artist-tile"
+            >
 
-            <article class="artist-card glass-panel">
+                <div class="artist-tile-art buckshot">
 
-                <div class="artist-photo">
-
-                    <img
-                        src="assets/images/placeholders/artist3.jpg"
-                        alt="Buckshot Bourbon"
-                    >
-
-                </div>
-
-                <div class="card-body">
-
-                    <span class="pill">
-
-                        COUNTRY ROCK
-
+                    <span>
+                        BB
                     </span>
 
-                    <h3>
+                </div>
 
+                <div class="artist-tile-info">
+
+                    <small>
+                        COUNTRY / ROCK
+                    </small>
+
+                    <h3>
                         Buckshot Bourbon
-
                     </h3>
 
-                    <a
-                        href="artist.html"
-                        class="text-cyan"
-                    >
-
-                        Explore →
-
-                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </div>
 
-            </article>
+            </a>
 
 
+            <!-- MOONFLOWER -->
 
-            <!-- ARTIST 4 -->
+            <a
+                href="artist.html?id=moonflower-radio"
+                class="artist-tile"
+            >
 
-            <article class="artist-card glass-panel">
+                <div class="artist-tile-art moonflower">
 
-                <div class="artist-photo">
-
-                    <img
-                        src="assets/images/placeholders/artist4.jpg"
-                        alt="Moonflower Radio"
-                    >
-
-                </div>
-
-                <div class="card-body">
-
-                    <span class="pill">
-
-                        INDIE
-
+                    <span>
+                        MR
                     </span>
 
+                </div>
+
+                <div class="artist-tile-info">
+
+                    <small>
+                        INDIE / DREAM POP
+                    </small>
+
                     <h3>
-
                         Moonflower Radio
-
                     </h3>
 
-                    <a
-                        href="artist.html"
-                        class="text-cyan"
-                    >
-
-                        Explore →
-
-                    </a>
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </div>
 
-            </article>
+            </a>
+
+
+            <!-- FIND REPLACE -->
+
+            <a
+                href="artist.html?id=find-replace"
+                class="artist-tile"
+            >
+
+                <div class="artist-tile-art findreplace">
+
+                    <span>
+                        F/R
+                    </span>
+
+                </div>
+
+                <div class="artist-tile-info">
+
+                    <small>
+                        ELECTRONIC
+                    </small>
+
+                    <h3>
+                        Find/Replace
+                    </h3>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- IMMORTAL PROPHETS -->
+
+            <a
+                href="artist.html?id=immortal-prophets"
+                class="artist-tile"
+            >
+
+                <div class="artist-tile-art prophets">
+
+                    <span>
+                        IP
+                    </span>
+
+                </div>
+
+                <div class="artist-tile-info">
+
+                    <small>
+                        ALTERNATIVE
+                    </small>
+
+                    <h3>
+                        Immortal Prophets
+                    </h3>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+            </a>
 
 
         </div>
@@ -854,35 +1019,28 @@
 </section>
 
 
+<!-- =========================================================
+     TRENDING
+========================================================= -->
 
-<!-- ==================================================
-     HOTTEST & TRENDING
-================================================== -->
+<section class="home-section trending-section">
 
-<section id="trending">
-
-    <div class="container">
+    <div class="home-container">
 
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <span class="pill">
-
+            <span class="section-label">
                 TRENDING
-
             </span>
 
             <h2>
-
                 Hottest Right Now
-
             </h2>
 
             <p>
-
-                What's making the biggest impact
-                across the QFR universe.
-
+                The artists, songs and videos getting
+                the most attention across QFR.
             </p>
 
         </div>
@@ -893,95 +1051,101 @@
 
             <!-- ARTIST -->
 
-            <article class="glass-panel stat-card">
+            <article class="trend-card">
 
-                <i class="fa-solid fa-headphones"></i>
+                <div class="trend-number">
+                    01
+                </div>
 
-                <span class="text-gray">
+                <div class="trend-icon">
 
+                    <i class="fa-solid fa-headphones"></i>
+
+                </div>
+
+                <span>
                     MOST STREAMED ARTIST
-
                 </span>
 
                 <h3>
-
                     Fractal Hearts
-
                 </h3>
 
-                <a
-                    href="artist.html"
-                    class="text-cyan"
-                >
+                <a href="artist.html?id=fractal-hearts">
 
-                    Explore Artist →
+                    Explore
+
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </a>
 
             </article>
-
 
 
             <!-- SONG -->
 
-            <article class="glass-panel stat-card">
+            <article class="trend-card">
 
-                <i class="fa-solid fa-music"></i>
+                <div class="trend-number">
+                    02
+                </div>
 
-                <span class="text-gray">
+                <div class="trend-icon">
 
-                    TOP SONG
+                    <i class="fa-solid fa-music"></i>
 
+                </div>
+
+                <span>
+                    MOST STREAMED SONG
                 </span>
 
                 <h3>
-
                     Electric Bloom
-
                 </h3>
 
-                <a
-                    href="music.html"
-                    class="text-cyan"
-                >
+                <a href="music.html">
 
-                    Listen →
+                    Listen
+
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </a>
 
             </article>
-
 
 
             <!-- VIDEO -->
 
-            <article class="glass-panel stat-card">
+            <article class="trend-card">
 
-                <i class="fa-solid fa-video"></i>
+                <div class="trend-number">
+                    03
+                </div>
 
-                <span class="text-gray">
+                <div class="trend-icon">
 
+                    <i class="fa-solid fa-play"></i>
+
+                </div>
+
+                <span>
                     MOST VIEWED VIDEO
-
                 </span>
 
                 <h3>
-
                     Moonflower Radio
-
                 </h3>
 
-                <a
-                    href="videos.html"
-                    class="text-cyan"
-                >
+                <a href="videos.html">
 
-                    Watch →
+                    Watch
+
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </a>
 
             </article>
-
 
         </div>
 
@@ -990,118 +1154,94 @@
 </section>
 
 
-
-<!-- ==================================================
+<!-- =========================================================
      QUANTUM PULSE
-================================================== -->
+========================================================= -->
 
-<section id="live-stats">
+<section class="pulse-section">
 
-    <div class="container">
+    <div class="pulse-grid"></div>
 
+    <div class="home-container">
 
-        <div class="section-title">
+        <div class="pulse-heading">
 
-            <span class="pill">
-
+            <span class="section-label">
                 QUANTUM PULSE
-
             </span>
 
             <h2>
-
                 The Label In Motion
-
             </h2>
 
             <p>
-
-                Activity across the Quantum Frequency
-                Records universe.
-
+                A living snapshot of the QFR universe.
             </p>
 
         </div>
 
 
-        <div class="stats-grid">
+        <div class="pulse-stats">
 
 
-            <div class="glass-panel stat-box">
+            <div class="pulse-stat">
 
-                <i class="fa-solid fa-headphones"></i>
+                <strong
+                    data-counter="12"
+                >
+                    12
+                </strong>
 
-                <h3 id="stat-streams">
-
-                    0
-
-                </h3>
-
-                <p>
-
-                    Total Streams
-
-                </p>
+                <span>
+                    Artists
+                </span>
 
             </div>
 
 
-            <div class="glass-panel stat-box">
+            <div class="pulse-stat">
 
-                <i class="fa-solid fa-eye"></i>
+                <strong
+                    data-counter="24"
+                >
+                    24
+                </strong>
 
-                <h3 id="stat-videos">
-
-                    0
-
-                </h3>
-
-                <p>
-
-                    Video Views
-
-                </p>
+                <span>
+                    Albums
+                </span>
 
             </div>
 
 
-            <div class="glass-panel stat-box">
+            <div class="pulse-stat">
 
-                <i class="fa-solid fa-music"></i>
+                <strong
+                    data-counter="150"
+                >
+                    150+
+                </strong>
 
-                <h3 id="stat-songs">
-
-                    0
-
-                </h3>
-
-                <p>
-
-                    Songs Released
-
-                </p>
+                <span>
+                    Songs
+                </span>
 
             </div>
 
 
-            <div class="glass-panel stat-box">
+            <div class="pulse-stat">
 
-                <i class="fa-solid fa-microphone"></i>
+                <strong
+                    data-counter="8"
+                >
+                    8
+                </strong>
 
-                <h3 id="stat-artists">
-
-                    0
-
-                </h3>
-
-                <p>
-
-                    Signed Artists
-
-                </p>
+                <span>
+                    Genres
+                </span>
 
             </div>
-
 
         </div>
 
@@ -1110,35 +1250,28 @@
 </section>
 
 
+<!-- =========================================================
+     GENRES
+========================================================= -->
 
-<!-- ==================================================
-     GENRE EXPLORER
-================================================== -->
+<section class="home-section genres-section">
 
-<section id="genre-explorer">
-
-    <div class="container">
+    <div class="home-container">
 
 
-        <div class="section-title">
+        <div class="section-heading">
 
-            <span class="pill">
-
-                EXPLORE
-
+            <span class="section-label">
+                FIND YOUR FREQUENCY
             </span>
 
             <h2>
-
-                Find Your Frequency
-
+                Something For Every Signal
             </h2>
 
             <p>
-
-                Explore the sounds living inside
+                Explore the sounds moving through
                 the Quantum Frequency universe.
-
             </p>
 
         </div>
@@ -1146,78 +1279,45 @@
 
         <div class="genre-grid">
 
-
-            <a href="music.html?genre=rock"
-               class="genre-card">
-
-                Rock
-
+            <a href="music.html?genre=rock">
+                ROCK
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=alternative"
-               class="genre-card">
-
-                Alternative
-
+            <a href="music.html?genre=alternative">
+                ALTERNATIVE
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=country"
-               class="genre-card">
-
-                Country
-
+            <a href="music.html?genre=country">
+                COUNTRY
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=industrial"
-               class="genre-card">
-
-                Industrial
-
+            <a href="music.html?genre=electronic">
+                ELECTRONIC
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=pop"
-               class="genre-card">
-
-                Pop
-
+            <a href="music.html?genre=industrial">
+                INDUSTRIAL
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=indie"
-               class="genre-card">
-
-                Indie
-
+            <a href="music.html?genre=indie">
+                INDIE
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=electronic"
-               class="genre-card">
-
-                Electronic
-
+            <a href="music.html?genre=pop">
+                POP
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-
-            <a href="music.html?genre=edm"
-               class="genre-card">
-
+            <a href="music.html?genre=edm">
                 EDM
-
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
-
-
-            <a href="music.html?genre=americana"
-               class="genre-card">
-
-                Americana
-
-            </a>
-
 
         </div>
 
@@ -1226,130 +1326,119 @@
 </section>
 
 
+<!-- =========================================================
+     DISCOVER
+========================================================= -->
 
-<!-- ==================================================
-     DISCOVER SOMETHING NEW
-================================================== -->
+<section class="discover-section">
 
-<section id="discover">
+    <div class="discover-inner">
 
-    <div class="container">
+        <div class="discover-symbol">
+            Q
+        </div>
+
+        <span class="section-label">
+            GO DEEPER
+        </span>
+
+        <h2>
+            Discover Something New
+        </h2>
+
+        <p>
+            Step outside your usual frequency.
+            You might find your next favorite artist.
+        </p>
+
+        <button
+            type="button"
+            class="qfr-button qfr-button-primary"
+            id="surprise-button"
+        >
+
+            <i class="fa-solid fa-shuffle"></i>
+
+            Surprise Me
+
+        </button>
+
+        <div
+            class="surprise-result"
+            id="surprise-result"
+        ></div>
+
+    </div>
+
+</section>
 
 
-        <div class="discover-panel glass-panel">
+<!-- =========================================================
+     NEWSLETTER
+========================================================= -->
+
+<section class="newsletter-section">
+
+    <div class="home-container">
+
+        <div class="newsletter-box">
 
 
-            <div>
+            <div class="newsletter-copy">
 
-                <span class="pill">
-
-                    DISCOVER
-
+                <span class="section-label">
+                    JOIN THE FREQUENCY
                 </span>
 
                 <h2>
-
-                    Step Outside
-                    Your Frequency
-
+                    Stay In Tune.
                 </h2>
 
                 <p>
-
-                    Let Quantum Frequency Records
-                    choose something unexpected for you.
-
+                    New music, artist announcements,
+                    videos and QFR news.
                 </p>
 
             </div>
 
 
-            <button
-                id="surprise-me"
-                class="button"
-            >
-
-                <i class="fa-solid fa-shuffle"></i>
-
-                Surprise Me
-
-            </button>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==================================================
-     NEWSLETTER
-================================================== -->
-
-<section id="newsletter">
-
-    <div class="container">
-
-
-        <div class="newsletter-panel glass-panel">
-
-
-            <span class="pill">
-
-                JOIN THE FREQUENCY
-
-            </span>
-
-
-            <h2>
-
-                Stay Tuned In
-
-            </h2>
-
-
-            <p>
-
-                Get new releases, artist news,
-                exclusive content and announcements
-                delivered directly to you.
-
-            </p>
-
-
             <form
+                class="newsletter-form"
                 id="newsletter-form"
             >
 
+                <label
+                    for="newsletter-email"
+                    class="sr-only"
+                >
+                    Email address
+                </label>
+
                 <input
-                    type="email"
                     id="newsletter-email"
-                    placeholder="Enter your email address"
-                    aria-label="Email address"
+                    type="email"
+                    placeholder="Your email address"
                     required
                 >
 
-
                 <button
                     type="submit"
-                    class="button"
                 >
 
                     Subscribe
+
+                    <i class="fa-solid fa-arrow-right"></i>
 
                 </button>
 
             </form>
 
 
-            <small>
-
-                No spam. Just music.
-
-            </small>
-
+            <p
+                class="newsletter-message"
+                id="newsletter-message"
+                aria-live="polite"
+            ></p>
 
         </div>
 
@@ -1358,210 +1447,110 @@
 </section>
 
 
+</main>
 
-<!-- ==================================================
+
+<!-- =========================================================
      FOOTER
-================================================== -->
+========================================================= -->
 
-<footer>
+<footer class="qfr-footer">
 
-    <div class="container">
-
-
-        <div class="footer-grid">
+    <div class="home-container">
 
 
-            <!-- BRAND -->
+        <div class="footer-top">
 
-            <div>
+
+            <div class="footer-brand">
 
                 <img
                     src="assets/logos/qfr-logo.png"
                     alt="Quantum Frequency Records"
-                    width="180"
                 >
 
                 <p>
-
-                    Discover • Harness • Nurture • Succeed
-
-                </p>
-
-                <p class="text-gray">
-
-                    Independent music.
-                    Infinite frequencies.
-
+                    Unleash Music's Raw Vibrational Energy.
                 </p>
 
             </div>
 
 
-            <!-- NAVIGATION -->
+            <div class="footer-column">
 
-            <div>
-
-                <h4>
-
+                <h3>
                     Explore
+                </h3>
 
-                </h4>
+                <a href="home.html">
+                    Home
+                </a>
 
-                <ul>
+                <a href="news.html">
+                    News
+                </a>
 
-                    <li>
-                        <a href="home.html">
-                            Home
-                        </a>
-                    </li>
+                <a href="artists.html">
+                    Artists
+                </a>
 
-                    <li>
-                        <a href="news.html">
-                            News
-                        </a>
-                    </li>
+                <a href="music.html">
+                    Music
+                </a>
 
-                    <li>
-                        <a href="artists.html">
-                            Artists
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="music.html">
-                            Music
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="videos.html">
-                            Videos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html">
-                            Gallery
-                        </a>
-                    </li>
-
-                </ul>
+                <a href="videos.html">
+                    Videos
+                </a>
 
             </div>
 
 
-            <!-- COMPANY -->
+            <div class="footer-column">
 
-            <div>
+                <h3>
+                    Discover
+                </h3>
 
-                <h4>
+                <a href="gallery.html">
+                    Gallery
+                </a>
 
-                    Quantum Frequency Records
+                <a href="about.html">
+                    About Us
+                </a>
 
-                </h4>
+                <a href="contact.html">
+                    Contact Us
+                </a>
 
-                <ul>
-
-                    <li>
-                        <a href="about.html">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="store.html">
-                            Store
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Privacy
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Terms
-                        </a>
-                    </li>
-
-                </ul>
+                <a href="store.html">
+                    Store
+                </a>
 
             </div>
 
 
-            <!-- SOCIAL -->
+            <div class="footer-column">
 
-            <div>
+                <h3>
+                    Follow
+                </h3>
 
-                <h4>
+                <a href="#">
+                    Instagram
+                </a>
 
-                    Follow The Frequency
+                <a href="#">
+                    YouTube
+                </a>
 
-                </h4>
+                <a href="#">
+                    Spotify
+                </a>
 
-
-                <div class="social-links">
-
-
-                    <a
-                        href="#"
-                        aria-label="Instagram"
-                    >
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        aria-label="Facebook"
-                    >
-
-                        <i class="fa-brands fa-facebook"></i>
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        aria-label="YouTube"
-                    >
-
-                        <i class="fa-brands fa-youtube"></i>
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        aria-label="Spotify"
-                    >
-
-                        <i class="fa-brands fa-spotify"></i>
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        aria-label="TikTok"
-                    >
-
-                        <i class="fa-brands fa-tiktok"></i>
-
-                    </a>
-
-
-                </div>
+                <a href="#">
+                    TikTok
+                </a>
 
             </div>
 
@@ -1570,12 +1559,25 @@
 
         <div class="footer-bottom">
 
-            <p>
+            <span>
+                © 2026 Quantum Frequency Records
+            </span>
 
-                © 2026 Quantum Frequency Records.
-                All rights reserved.
+            <div>
 
-            </p>
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+                <a href="#">
+                    Licensing
+                </a>
+
+            </div>
 
         </div>
 
@@ -1584,61 +1586,21 @@
 </footer>
 
 
+<!-- =========================================================
+     NOW PLAYING UNIVERSE
+========================================================= -->
 
-<!-- ==================================================
-     PERSISTENT NOW PLAYING PLAYER
-================================================== -->
+<div
+    class="now-playing"
+    id="now-playing"
+>
 
-<div id="qfr-player">
-
-
-    <div class="player-left">
-
-
-        <img
-            id="player-artwork"
-            src="assets/images/placeholders/default-cover.jpg"
-            alt="Currently Playing"
-        >
-
-
-        <div>
-
-            <h4 id="player-title">
-
-                Nothing Playing
-
-            </h4>
-
-
-            <p id="player-artist">
-
-                Quantum Frequency Records
-
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="player-center">
-
+    <div class="now-playing-left">
 
         <button
-            id="previous-track"
-            aria-label="Previous track"
-        >
-
-            <i class="fa-solid fa-backward-step"></i>
-
-        </button>
-
-
-        <button
-            id="play-pause"
-            aria-label="Play or pause"
+            type="button"
+            id="player-play"
+            aria-label="Play"
         >
 
             <i class="fa-solid fa-play"></i>
@@ -1646,88 +1608,62 @@
         </button>
 
 
-        <button
-            id="next-track"
-            aria-label="Next track"
-        >
+        <div class="player-info">
 
-            <i class="fa-solid fa-forward-step"></i>
+            <span>
+                NOW PLAYING
+            </span>
 
-        </button>
-
-    </div>
-
-
-
-    <div class="player-right">
-
-
-        <div id="player-waveform"></div>
-
-
-        <input
-            type="range"
-            min="0"
-            max="100"
-            value="80"
-            id="volume"
-            aria-label="Volume"
-        >
-
-    </div>
-
-</div>
-
-
-
-<!-- ==================================================
-     GLOBAL MODAL
-================================================== -->
-
-<div id="qfr-modal">
-
-    <div class="modal-window">
-
-
-        <button
-            onclick="QFR.modal.close()"
-            aria-label="Close"
-        >
-
-            ✕
-
-        </button>
-
-
-        <div class="modal-body">
+            <strong id="player-title">
+                Nothing Playing
+            </strong>
 
         </div>
 
     </div>
 
+
+    <div class="player-wave">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="player-close"
+        id="player-close"
+        aria-label="Close player"
+    >
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
 </div>
 
 
-
-<!-- ==================================================
+<!-- =========================================================
      JAVASCRIPT
-================================================== -->
+========================================================= -->
 
-<script src="assets/js/app.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"
+></script>
 
-<script src="assets/js/main.js"></script>
-
-<script src="assets/js/player.js"></script>
-
-<script src="assets/js/particles.js"></script>
-
-<script src="assets/js/stats.js"></script>
-
-<script src="assets/js/notifications.js"></script>
-
-<script src="assets/js/transitions.js"></script>
-
-<script src="assets/js/modal.js"></script>
+<script src="assets/js/home.js"></script>
 
 
 </body>
